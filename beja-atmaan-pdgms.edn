@@ -5,7 +5,7 @@
 :case [:Object, :Subject]
 	  :caseHead [:H_Object, :H_Subject]
 	  :clauseType [:Relative]
-	  :conjClass [:Irregular, :Prefix, :Suffix]
+	  :conjClass [:Irregular, :Prefix, :Suffix :x] "lookup"
 	  :conjSubType [:AuxPut, :AuxTake, :NegAux, :NegCop,  :Become]
 	  :derivedStemAug [:Repetitive, :Simple]
 	  :formFrequency [:Frequent, :Rare]
@@ -106,17 +106,17 @@
   :rib {:conjClass :Prefix, :gloss "refuse", :lemma "rib", :pos :Verb}
   :rih {:conjClass :Suffix, :gloss "see", :lemma "rhaa", :pos :Verb}
   :sa {:lemma "sá’a", :gloss "sit"}
-  :sak {:conjClass "[x]", :gloss "work", :lemma " ", :pos :Verb}
+  :sak {:conjClass :x, :gloss "work", :lemma " ", :pos :Verb}
   :sdd {:lemma "", :gloss "peel"}
   :sibib {:conjClass :Prefix, :gloss "look", :lemma "šibib", :pos :Verb}
   :sim {:rootClass :CiC, :gloss "mention"}
   :siniy {:rootClass :CiCiy, :gloss "await"}
-  :soo {:conjClass "[x]", :gloss "inform", :lemma " ", :pos :Verb}
+  :soo {:conjClass :x, :gloss "inform", :lemma " ", :pos :Verb}
   :tam {:conjClass :Suffix, :gloss "eat", :lemma "tam-", :pos :Verb}
   :tama {:conjClass :Suffix, :gloss "eat", :lemma "tama", :pos :Verb}
   :tikwikw {:rootClass :CiCiC, :gloss "prepare"}
   :uhi {:rootClass :CiC, :gloss "let"}
-  :waaw {:conjClass "[x]", :gloss "weep", :lemma " ", :pos :Verb}
+  :waaw {:conjClass :x, :gloss "weep", :lemma " ", :pos :Verb}
   :yak {:conjClass :Prefix, :gloss "start", :lemma "yak-", :pos :Verb}
   :ústaaz {:gloss "teacher", :lemma "ústaaz (pl. ustáz)", }
   :šibiba {:conjClass :Prefix, :gloss "look", :lemma "šibiba", :pos :Verb}
