@@ -5,7 +5,7 @@
 :case [:Object, :Subject]
 	  :caseHead [:H_Object, :H_Subject]
 	  :clauseType [:Relative]
-	  :conjClass [:Irregular, :Prefix, :Suffix :x] "lookup"
+	  :conjClass [:Irregular, :Prefix, :Suffix :x] 
 	  :conjSubType [:AuxPut, :AuxTake, :NegAux, :NegCop,  :Become]
 	  :derivedStemAug [:Repetitive, :Simple]
 	  :formFrequency [:Frequent, :Rare]
