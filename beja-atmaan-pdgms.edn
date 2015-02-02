@@ -39,7 +39,7 @@
   :Handhiwaayii {:gloss "hadendowa", :lemma "Handhiwaayii", }
   :NEGAUX {:gloss "Negative Auxiliaries", :lemma "", }
   :abik {:rootClass :HaCiC, :gloss "seize"}
-  :adgir {:conjClass "[x]" , :gloss "able", :lemma " ", :pos :Verb}
+  :adgir {:conjClass :x , :gloss "able", :lemma " ", :pos :Verb}
   :afirh {:gloss "rejoice"}
   :afreey {:gloss "bad"}
   :afrey {:gloss "[x]", :lemma "[y]", }
@@ -60,7 +60,7 @@
   :bidil {:rootClass :CiCiC, :gloss "change"}
   :bireet {:gloss "rain"}
   :bis {:gloss "[x]", :lemma "[y]", }
-  :d_iy {:conjClass "[x]" , :gloss "do, put", :lemma "d’íya", :pos :Verb}
+  :d_iy {:conjClass :x , :gloss "do, put", :lemma "d’íya", :pos :Verb}
   :daas {:gloss "put"}
   :dam {:conjClass :Prefix, :gloss "climb, ride", :lemma "dama", :pos :Verb}
   :dhigwiy {:rootClass :CiCiy, :gloss "count"}
@@ -69,7 +69,7 @@
   :diliba {:conjClass :Prefix, :gloss "trade", :lemma "diliba", :pos :Verb}
   :dir {:lemma "", :gloss "kill"}
   :diy {:conjClass :Suffix, :gloss "say", :lemma "diya", :pos :Verb}
-  :ee {:conjClass "[x]", :gloss "come", :lemma " ", :pos :Verb}
+  :ee {:conjClass :x, :gloss "come", :lemma " ", :pos :Verb}
   :fay {:gloss "[x]", :lemma "[y]", }
   :faya {:conjClass :Irregular, :gloss "be", :lemma "faya", :pos :Verb}
   :fidig {:rootClass :CiCiC, :gloss "open"}
@@ -77,9 +77,9 @@
   :fiyak {:conjClass :Prefix, :gloss "carry", :lemma "fiyaka", :pos :Verb}
   :gad {:lemma "gáda", :gloss "stand"}
   :gid {:lemma "[x]", :gloss "throw"}
-  :giig {:conjClass "[x]", :gloss "leave, go away", :lemma " ", :pos :Verb}
+  :giig {:conjClass :x, :gloss "leave, go away", :lemma " ", :pos :Verb}
   :gwa {:conjClass :Suffix, :gloss "drink", :lemma "gwa", :pos :Verb}
-  :ha {:conjClass "[x]", :gloss "bring", :lemma " ", :pos :Verb}
+  :ha {:conjClass :x, :gloss "bring", :lemma " ", :pos :Verb}
   :hagit {:rootClass :HaCiC, :gloss "wait"}
   :hariw {:conjClass :Prefix, :gloss "look for", :lemma "hariwa", :pos :Verb}
   :haráayrii {:gloss "liar", :lemma "haráayr’ii", }
