@@ -16,11 +16,11 @@
 	  :nonFiniteForm [:NominalAction, :Participle]
 	  :numHead [:H_Plural, :H_Singular]
 	  :numObj [:O_Plural, :O_Singular]
-	  :number [:Common, :Plural, :Singular]
+	  :number [:Plural, :Singular]
 	  :pdgmType [:Overview, :Intention, :Mood, :NominalizationPatterns, :Q, :RelSuff, :Repetitive, :SubjPref, :TransVerbPatterns, :AuxPut, :AuxTake, :NegAux, :NegCop,  :Become]
 	  :persObj [:O_Person1, :O_Person2, :O_Person3]
 	  :person [:Person1, :Person2, :Person3]
-	  :polarity [:Affirmative, :Common, :Negative]
+	  :polarity [:Affirmative, :Negative]
 	  :pos [:Pronoun, :Verb]
 	  :proClass [:Independent, :IndependentPersonal, :ObjSuff, :ObjSuffwVerb, :PersSuff, :PossSuff, :Possessive]
 	  :rootClass [:CHiy, :CaC, :Cay, :CiC, :CiCH, :CiCaC, :CiCiC, :CiCiy, :Ciy, :HaCiC]
@@ -1676,7 +1676,7 @@
 	    :pos :Verb,
 	    :pdgmType :Overview}
     :terms [[:nonFiniteForm,  :polarity, :token]  ;; schema
-	    [:NominalAction, :Common,  "u-yákt"],
+	    [:NominalAction, :_NA,  "u-yákt"],
 	    [:Participle, :Affirmative, "yákaab"],
 	    [:Participle,  :Negative,  "baayákay"]]
     }
@@ -3452,7 +3452,6 @@
 	    :lexeme :sibib,
 	    :morphClass :VNOMFORM, 
              :nonFiniteForm :Participle,
-	    :number :Common,	    
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :rootClass :CiCiC}
