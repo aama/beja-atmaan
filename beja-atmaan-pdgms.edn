@@ -22,7 +22,7 @@
 	  :person [:Person1, :Person2, :Person3]
 	  :polarity [:Affirmative, :Negative]
 	  :pos [:Pronoun, :Verb]
-	  :proClass [:Independent, :IndependentPersonal, :ObjSuff, :ObjSuffwVerb, :PersSuff, :PossSuff, :Possessive]
+	  :proClass [:Independent, :IndependentPersonal, :ObjSuff, :ObjSuffwVerb, :PersSuff, :PossSuff, :IndependentPossessive]
 	  :rootClass [:CHiy, :CaC, :Cay, :CiC, :CiCH, :CiCaC, :CiCiC, :CiCiy, :Ciy, :HaCiC]
 	  :stemClass [:HFin, :HamzFin, :HamzInitVFin, :VFin1, :VFin2]
 	  :strength [:weak]
@@ -1163,31 +1163,6 @@
 	    [:Masc, :Singular, :Person3, "bayáab kíiki"],
 	    [:Common, :Plural, :Person3, "báyaab kíikeen"]]
     }
-    {:label "beja_W-VAffObjSuff-hiy"
-    :note "Wedekind-etal2007 p. 133"
-    :common {:lexeme :hiy,
-	    :polarity :Affirmative,
-	    :pos :Var,
-	    :proClass :ObjSuffwVerb}
-    :terms [[:gender, :genObj, :numObj, :number, :persObj, :person, :token]  ;; schema
-	    [:Masc, :Masc, :Singular, :Singular, :Person3, :Person3, "baróoh ihí"],
-	    [:Common, :Common, :Singular, :Singular, :Person1, :Person1, "baróok ahíhóok"],
-	    [:Common, :Common, :Plural, :Plural, :Person1, :Person2, "áneeb tihíinahéeb"],
-	    [:Masc, :Common, :Singular, :Singular, :Person1, :Person3, "áneeb ihíhéeb"],
-	    [:Masc, :Common, :Plural, :Singular, :Person2, :Person3, "batéekna ihíhóokna"],
-	    [:Masc, :Common, :Plural, :Singular, :Person3, :Person3, "batéek ihí"],
-	    [:Masc, :Fem, :Plural, :Singular, :Person1, :Person3, "hínin ihíhóon"],
-	    [:Masc, :Common, :Plural, :Singular, :Person3, :Person3, "baréeh ihí"],
-	    [:Fem, :Common, :Singular, :Singular, :Person1, :Person3, "áneeb tihíhéeb "],
-	    [:Masc, :Common, :Singular, :Singular, :Person1, :Person2, "áneeb tihíyahéeb"],
-	    [:Masc, :Masc, :Singular, :Singular, :Person2, :Person3, "baróok ihíhóok"],
-	    [:Masc, :Common, :Plural, :Singular, :Person2, :Person3, "baréekna ihíhókna"],
-	    [:Fem, :Common, :Singular, :Singular, :Person1, :Person2, "áneeb tihíyihéeb"],
-	    [:Common, :Common, :Plural, :Plural, :Person1, :Person3, "áneeb ihíinhéeb"],
-	    [:Masc, :Common, :Singular, :Singular, :Person1, :Person3, "áneeb ihíhéeb"],
-	    [:Common, :Common, :Plural, :Plural, :Person1, :Person1, "baróok nihíhóok"],
-	    [:Masc, :Fem, :Singular, :Singular, :Person3, :Person3, "batóoh ihí"]]
-    }
     {:label "beja_W-VPrefCaCNegPres-naw"
     :note "Wedekind-etal2007 p. 115"
     :common {:conjClass :Prefix,
@@ -2065,7 +2040,7 @@
     }
     {:label "beja_W-VAorRepetitive"
     :note "Wedekind-etal2007 p. 156"
-    :common {:morphClass :INTENSIVEACTION,
+    :common {:morphClas:INTENSIVEACTION,
 	    :number :Singular,
 	    :person :Person1,
 	    :pos :Verb,
@@ -3724,43 +3699,68 @@
 	    [:Common, :Plural, :Person1, "náan gw’áni?"],
 	    [:Common, :Singular, :Person1, "náan gw’í?"]]
     }
+    {:label "beja_W-VAffObjSuff-hiy"
+    :note "Wedekind-etal2007 p. 133; D1.6.6"
+    :common {:lexeme :hiy,
+	    :polarity :Affirmative,
+	    :pos :Var,
+	    :proClass :ObjSuffwVerb}
+    :terms [[:gender, :genObj, :numObj, :number, :persObj, :person, :token]  ;; schema
+	    [:Masc, :O_Masc, :O_Singular, :Singular, :O_Person3, :Person3, "baróoh ihí"],
+	    [:Common, :O_Common, :O_Singular, :Singular, :O_Person1, :Person1, "baróok ahíhóok"],
+	    [:Common, :O_Common, :O_Plural, :Plural, :O_Person1, :Person2, "áneeb tihíinahéeb"],
+	    [:Masc, :O_Common, :O_Singular, :Singular, :O_Person1, :Person3, "áneeb ihíhéeb"],
+	    [:Masc, :O_Common, :O_Plural, :Singular, :O_Person2, :Person3, "batéekna ihíhóokna"],
+	    [:Masc, :O_Common, :O_Plural, :Singular, :O_Person3, :Person3, "batéek ihí"],
+	    [:Masc, :O_Fem, :O_Plural, :Singular, :O_Person1, :Person3, "hínin ihíhóon"],
+	    [:Masc, :O_Common, :O_Plural, :Singular, :O_Person3, :Person3, "baréeh ihí"],
+	    [:Fem, :O_Common, :O_Singular, :Singular, :O_Person1, :Person3, "áneeb tihíhéeb "],
+	    [:Masc, :O_Common, :O_Singular, :Singular, :O_Person1, :Person2, "áneeb tihíyahéeb"],
+	    [:Masc, :O_Masc, :O_Singular, :Singular, :O_Person2, :Person3, "baróok ihíhóok"],
+	    [:Masc, :O_Common, :O_Plural, :Singular, :O_Person2, :Person3, "baréekna ihíhókna"],
+	    [:Fem, :O_Common, :O_Singular, :Singular, :O_Person1, :Person2, "áneeb tihíyihéeb"],
+	    [:Common, :O_Common, :O_Plural, :Plural, :O_Person1, :Person3, "áneeb ihíinhéeb"],
+	    [:Masc, :O_Common, :O_Singular, :Singular, :O_Person1, :Person3, "áneeb ihíhéeb"],
+	    [:Common, :O_Common, :O_Plural, :Plural, :O_Person1, :Person1, "baróok nihíhóok"],
+	    [:Masc, :O_Fem, :O_Singular, :Singular, :O_Person3, :Person3, "batóoh ihí"]]
+    }
     {:label "beja_W-VNegObjSuffExx"
     :note "Wedekind-etal2007 p. 143"
     :common {:polarity :Negative,
 	    :pos :Var,
 	    :proClass :ObjSuffwVerb}
     :terms [[:gender, :genObj, :numObj, :number, :persObj, :person, :token, :lexeme, :token-gloss]  ;; schema
-	    [:Fem, :Common, :Singular, :Singular, :Person2, :Person1, "rhaatóok káaki", :rih, "I(F) did not see you(M/F)"],
-	    [:Masc, :Masc, :Singular, :Singular, :Person3, :Person3, "(baróoh) rháab kíiki", :rih, "he did not see (him)"],
-	    [:Masc, :Common, :Plural, :Singular, :Person1, :Person2, "rháayoon kíttaa", :rih, "you(M) did not see us"],
-	    [:Masc, :Masc, :Singular, :Singular, :Person3, :Person3, "barúuh kanáab kíiki", :kan, "he hasnt known it/him"],
-	    [:Masc, :Common, :Plural, :Singular, :Person3, :Person1, "rháayhoona káaki", :rih, "I(M) did not see them"],
-	    [:Masc, :Masc, :Singular, :Plural, :Person3, :Person2, "baráakna kánaab", :kan, "you(M) havent known it/him"],
-	    [:Fem, :Masc, :Singular, :Singular, :Person3, :Person1, "kanáat káaki", :kan, "I(F) havent known it/him"],
-	    [:Fem, :Masc, :Singular, :Singular, :Person3, :Person2, "batúuk kanáat kíttaayi", :kan, "you(F) havent known it/him"],
-	    [:Masc, :Masc, :Singular, :Singular, :Person3, :Person1, "(baróoh) rháab káaki", :rih, "I(M) did not see (him)"],
-	    [:Fem, :Masc, :Singular, :Plural, :Person3, :Person3, "baraah kánaat kíikeen", :kan, "they(F) havent known it/him"],
-	    [:Fem, :Common, :Plural, :Singular, :Person3, :Person1, "rháatehoona káaki", :rih, "I(F) did not see them"],
-	    [:Fem, :Common, :Plural, :Singular, :Person3, :Person2, "rháatehoona kíttaayi", :rih, "you(F) did not see them"],
-	    [:Masc, :Common, :Plural, :Singular, :Person2, :Person1, "rháayookna káaki", :rih, "I(M) did not see you(PL)"],
-	    [:Masc, :Common, :Plural, :Singular, :Person3, :Person2, "(baréeh) rháab kíttaa", :rih, "you(M) did not see them"],
-	    [:Fem, :Masc, :Singular, :Singular, :Person3, :Person3, "(baróoh) rháat kítti", :rih, "še did not see (him)"],
-	    [:Masc, :Masc, :Singular, :Plural, :Person3, :Person3, "baráah kánaab", :kan, "they(M) havent known it/him"],
-	    [:Fem, :Masc, :Singular, :Singular, :Person3, :Person1, "(baróoh) rháat káaki", :rih, "I(F) did not see (him)"],
-	    [:Common, :Common, :Plural, :Plural, :Person2, :Person1, "láa láa kínkanhookna", :kan, "no - I do not know you"],
-	    [:Fem, :Common, :Singular, :Singular, :Person1, :Person2, "rháatu kíttaayi", :rih, "you(F) did not see me"],
-	    [:Common, :Common, :Plural, :Plural, :Person2, :Person1, "awóoh niktéenhookna", :kan, "yes - we know you"],
-	    [:Fem, :Masc, :Singular, :Singular, :Person3, :Person3, "batúuh kanáat kítti", :kan, "še hasnt known it/him"],
-	    [:Masc, :Masc, :Singular, :Singular, :Person3, :Person2, "barúuk kanáab kíttaa", :kan, "you(M) havent known it/him"],
-	    [:Common, :Masc, :Singular, :Singular, :Person2, :Person1, "láa láa káakanhóok", :kan, "no - I do not know you"],
-	    [:Fem, :Masc, :Singular, :Plural, :Person3, :Person2, "bataakna kánaat kítteena", :kan, "you(F) havent known it/him"],
-	    [:Masc, :Masc, :Singular, :Singular, :Person3, :Person1, "áni kanáab", :kan, "I havent known it/him"],
-	    [:Common, :Masc, :Singular, :Singular, :Person2, :Person1, "awóoh aktéenhóok", :kan, "yes - I know you"],
-	    [:Masc, :Common, :Singular, :Singular, :Person2, :Person1, "rhaayóok káaki", :rih, "I(M) did not see you(M/F)"],
-	    [:Fem, :Common, :Plural, :Singular, :Person2, :Person1, "rháatookna káaki", :rih, "I(F) did not see you(PL)"],
-	    [:Common, :Masc, :Singular, :Plural, :Person3, :Person1, "hinín kánaab kínki", :kan, "we havent known it/him"],
-	    [:Masc, :Common, :Singular, :Singular, :Person1, :Person2, "rháayu kíttaa", :rih, "you(M) did not see me"],
-	    [:Fem, :Common, :Plural, :Singular, :Person1, :Person2, "rhaatóon kíttaayi", :rih, "you(F) did not see us"]]
+	    [:Fem, :O_Common, :O_Singular, :Singular, :O_Person2, :Person1, "rhaatóok káaki", :rih, "I(F) did not see you(M/F)"],
+	    [:Masc, :O_Masc, :O_Singular, :Singular, :O_Person3, :Person3, "(baróoh) rháab kíiki", :rih, "he did not see (him)"],
+	    [:Masc, :O_Common, :O_Plural, :Singular, :O_Person1, :Person2, "rháayoon kíttaa", :rih, "you(M) did not see us"],
+	    [:Masc, :O_Masc, :O_Singular, :Singular, :O_Person3, :Person3, "barúuh kanáab kíiki", :kan, "he hasnt known it/him"],
+	    [:Masc, :O_Common, :O_Plural, :Singular, :O_Person3, :Person1, "rháayhoona káaki", :rih, "I(M) did not see them"],
+	    [:Masc, :O_Masc, :O_Singular, :Plural, :O_Person3, :Person2, "baráakna kánaab", :kan, "you(M) havent known it/him"],
+	    [:Fem, :O_Masc, :O_Singular, :Singular, :O_Person3, :Person1, "kanáat káaki", :kan, "I(F) havent known it/him"],
+	    [:Fem, :O_Masc, :O_Singular, :Singular, :O_Person3, :Person2, "batúuk kanáat kíttaayi", :kan, "you(F) havent known it/him"],
+	    [:Masc, :O_Masc, :O_Singular, :Singular, :O_Person3, :Person1, "(baróoh) rháab káaki", :rih, "I(M) did not see (him)"],
+	    [:Fem, :O_Masc, :O_Singular, :Plural, :O_Person3, :Person3, "baraah kánaat kíikeen", :kan, "they(F) havent known it/him"],
+	    [:Fem, :O_Common, :Plural, :Singular, :O_Person3, :Person1, "rháatehoona káaki", :rih, "I(F) did not see them"],
+	    [:Fem, :O_Common, :Plural, :Singular, :O_Person3, :Person2, "rháatehoona kíttaayi", :rih, "you(F) did not see them"],
+	    [:Masc, :O_Common, :Plural, :Singular, :O_Person2, :Person1, "rháayookna káaki", :rih, "I(M) did not see you(PL)"],
+	    [:Masc, :O_Common, :Plural, :Singular, :O_Person3, :Person2, "(baréeh) rháab kíttaa", :rih, "you(M) did not see them"],
+	    [:Fem, :O_Masc, :O_Singular, :Singular, :O_Person3, :Person3, "(baróoh) rháat kítti", :rih, "še did not see (him)"],
+	    [:Masc, :O_Masc, :O_Singular, :Plural, :O_Person3, :Person3, "baráah kánaab", :kan, "they(M) havent known it/him"],
+	    [:Fem, :O_Masc, :O_Singular, :Singular, :O_Person3, :Person1, "(baróoh) rháat káaki", :rih, "I(F) did not see (him)"],
+	    [:Common, :O_Common, :O_Plural, :Plural, :O_Person2, :Person1, "láa láa kínkanhookna", :kan, "no - I do not know you"],
+	    [:Fem, :O_Common, :O_Singular, :Singular, :O_Person1, :Person2, "rháatu kíttaayi", :rih, "you(F) did not see me"],
+	    [:Common, :O_Common, :O_Plural, :Plural, :O_Person2, :Person1, "awóoh niktéenhookna", :kan, "yes - we know you"],
+	    [:Fem, :O_Masc, :O_Singular, :Singular, :O_Person3, :Person3, "batúuh kanáat kítti", :kan, "še hasnt known it/him"],
+	    [:Masc, :O_Masc, :O_Singular, :Singular, :O_Person3, :Person2, "barúuk kanáab kíttaa", :kan, "you(M) havent known it/him"],
+	    [:Common, :O_Masc, :O_Singular, :Singular, :O_Person2, :Person1, "láa láa káakanhóok", :kan, "no - I do not know you"],
+	    [:Fem, :O_Masc, :O_Singular, :Plural, :O_Person3, :Person2, "bataakna kánaat kítteena", :kan, "you(F) havent known it/him"],
+	    [:Masc, :O_Masc, :O_Singular, :Singular, :O_Person3, :Person1, "áni kanáab", :kan, "I havent known it/him"],
+	    [:Common, :O_Masc, :O_Singular, :Singular, :O_Person2, :Person1, "awóoh aktéenhóok", :kan, "yes - I know you"],
+	    [:Masc, :O_Common, :O_Singular, :Singular, :O_Person2, :Person1, "rhaayóok káaki", :rih, "I(M) did not see you(M/F)"],
+	    [:Fem, :O_Common, :Plural, :Singular, :O_Person2, :Person1, "rháatookna káaki", :rih, "I(F) did not see you(PL)"],
+	    [:Common, :O_Masc, :O_Singular, :Plural, :O_Person3, :Person1, "hinín kánaab kínki", :kan, "we havent known it/him"],
+	    [:Masc, :O_Common, :O_Singular, :Singular, :O_Person1, :Person2, "rháayu kíttaa", :rih, "you(M) did not see me"],
+	    [:Fem, :O_Common, :Plural, :Singular, :O_Person1, :Person2, "rhaatóon kíttaayi", :rih, "you(F) did not see us"]]
     }
     {:label "beja_W-VNegFuture-become"
     :note "Wedekind-etal2007 p. 154 (cf. also 152) (iikta become frm aka,kaya ?)"
@@ -3828,38 +3828,11 @@
 	    [:Masc, :Plural, :Person3, "-ba / -(y)a"],
 	    [:Fem, :Singular, :Person2, "-tuwi"]]
     }
-    {:label "beja_W-PInd"
-    :note "Wedekind-etal2007 Table #14"
-    :common {:morpheme :PRO,
-	    :pos :Pronoun,
-	    :proClass :Independent}
-    :terms [[:case, :gender, :number, :person, :token]  ;; schema
-	    [:Subject, :Fem, :Plural, :Person3, "batáah"],
-	    [:Subject, :Masc, :Plural, :Person2, "baráakna"],
-	    [:Subject, :Common, :Singular, :Person1, "áni"],
-	    [:Subject, :Fem, :Singular, :Person3, "batúuh"],
-	    [:Subject, :Masc, :Singular, :Person3, "barúuh"],
-	    [:Object, :Fem, :Plural, :Person2, "batéekna"],
-	    [:Subject, :Masc, :Plural, :Person3, "baráah"],
-	    [:Object, :Fem, :Plural, :Person3, "batéeh"],
-	    [:Object, :Common, :Plural, :Person1, "hinín"],
-	    [:Object, :Masc, :Singular, :Person2, "baróok"],
-	    [:Subject, :Common, :Plural, :Person1, "hinín"],
-	    [:Object, :Common, :Singular, :Person1, "anéeb"],
-	    [:Subject, :Fem, :Singular, :Person2, "batúuk"],
-	    [:Object, :Masc, :Plural, :Person2, "baréekna"],
-	    [:Object, :Masc, :Singular, :Person3, "baróoh"],
-	    [:Subject, :Fem, :Plural, :Person2, "batáakna"],
-	    [:Object, :Masc, :Plural, :Person3, "baréeh"],
-	    [:Object, :Fem, :Singular, :Person2, "batóck"],
-	    [:Object, :Fem, :Singular, :Person3, "batóoh"],
-	    [:Subject, :Masc, :Singular, :Person2, "barúuk"]]
-    }
     {:label "beja_W-PPoss"
     :note "Wedekind-etal2007 Table #22"
     :common {:morpheme :PRO,
 	    :pos :Pronoun,
-	    :proClass :Possessive}
+	    :proClass :IndependentPossessive}
     :terms [[:genHead, :gender, :numHead, :number, :person, :token]  ;; schema
 	    [:H_Fem, :Masc, :H_Singular, :Plural, :Person3, "baréetehoonaatu"],
 	    [:H_Fem, :Fem, :H_Singular, :Singular, :Person2, "batiitóoktu"],
