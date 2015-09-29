@@ -1,6 +1,9 @@
 {
 :lang :beja-atmaan
 :sgpref "bat"
+:datasource "Wedekind-etal2007"
+:geodemoURL "http://www.ethnologue.com/language/bej"
+:geodemoTXT "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan, Eritrea, and Egypt by more than a million individuals. The Atmaan variety is spoken in Eastern Sudan, and is described in Wedekind-etal2007."
 :schemata {
            :case [:Object, :Subject]
 	  :caseHead [:H_Object, :H_Subject]
@@ -170,8 +173,7 @@
 	    ["báadí"]]
     }
     {:label "beja_W-VIrregAffAor-hiy"
-    :note "Wedekind-etal2007 p. 123. The morphologically past form éefi,etc.,has present
-            meaning."
+    :note "Wedekind-etal2007 p. 123. The morphologically past form éefi,etc.,has present meaning."
     :common {:conjClass :Irregular,
 	    :lexeme :hiy,
 	    :polarity :Affirmative,
@@ -241,7 +243,7 @@
 	    [:Common, :Singular, :Person1, "ribáab káaki"],
 	    [:Masc, :Singular, :Person2, "ribáab kíttáa"]]
     }
-    {:label "beja_W-VPrefCi(y)NomAct"
+    {:label "beja_W-VPrefCiyNomAct"
     :note "Wedekind-etal2007 p. 103"
     :common {:conjClass :Prefix,
 	    :gender :Common,
@@ -868,7 +870,7 @@
     :terms [[:token]  ;; schema
 	    ["harwáab"]]
     }
-    {:label "beja_W-VPrefAffCi(y)Participle"
+    {:label "beja_W-VPrefAffCiyParticiple"
     :note "Wedekind-etal2007 p. 103"
     :common {:conjClass :Prefix,
 	    :gender :Masc,
@@ -2302,7 +2304,7 @@
     :terms [[:token]  ;; schema
 	    ["bahar’iw"]]
     }
-    {:label "beja_W-VPrefNegCi(y)Participle"
+    {:label "beja_W-VPrefNegCiyParticiple"
     :note "Wedekind-etal2007 p. 103"
     :common {:conjClass :Prefix,
 	    :gender :Common,
@@ -3810,16 +3812,16 @@
 	    :proClass :PersSuff}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Fem, :Plural, :Person2, "-taana"],
-	    [:Masc, :Plural, :Person2, "-baana / -(y)aana"],
+	    [:Masc, :Plural, :Person2, "-baana / -yaana"],
 	    [:Fem, :Singular, :Person3, "-tu"],
 	    [:Masc, :Singular, :Person2, "-buwa/-wa"],
 	    [:Fem, :Plural, :Person1, "-ta"],
-	    [:Masc, :Singular, :Person1, "-bu / -(y)u"],
-	    [:Masc, :Singular, :Person3, "-bu / -(y)u"],
+	    [:Masc, :Singular, :Person1, "-bu / -yu"],
+	    [:Masc, :Singular, :Person3, "-bu / -yu"],
 	    [:Fem, :Plural, :Person3, "-ta"],
-	    [:Masc, :Plural, :Person1, "-ba / -(y)a"],
+	    [:Masc, :Plural, :Person1, "-ba / -ya"],
 	    [:Fem, :Singular, :Person1, "-tu"],
-	    [:Masc, :Plural, :Person3, "-ba / -(y)a"],
+	    [:Masc, :Plural, :Person3, "-ba / -ya"],
 	    [:Fem, :Singular, :Person2, "-tuwi"]]
     }
     {:label "beja_W-PPoss"
@@ -3920,18 +3922,18 @@
 	    :pos :Pronoun,
 	    :proClass :PossSuff}
     :terms [[:numHead, :number, :person, :token]  ;; schema
-	    [:H_Plural, :Plural, :Person1, "-(y)aan -(y)een"],
-	    [:H_Plural, :Plural, :Person2, "-(y)aakna -(y)eekna"],
-	    [:H_Singular, :Plural, :Person1, "-(y)uun -(y)oon"],
-	    [:H_Singular, :Plural, :Person2, "-(y)uukna -(y)ookna"],
-	    [:H_Singular, :Singular, :Person2, "-(y)uuk -(y)ook"],
-	    [:H_Plural, :Plural, :Person3, "-(y)aah -(y)eeh"],
-	    [:H_Plural, :Singular, :Person1, "-(y)ii -(y)ee"],
-	    [:H_Plural, :Singular, :Person2, "-(y)aak -(y)eek"],
-	    [:H_Singular, :Plural, :Person3, "-(y)uuh -(y)ooh"],
-	    [:H_Plural, :Singular, :Person3, "-(y)aah -(y)eeh"],
-	    [:H_Singular, :Singular, :Person3, "-(y)uuh -(y)ooh"],
-	    [:H_Singular, :Singular, :Person1, "-(y)uu -(y)oo"]]
+	    [:H_Plural, :Plural, :Person1, "-yaan -yeen"],
+	    [:H_Plural, :Plural, :Person2, "-yaakna -yeekna"],
+	    [:H_Singular, :Plural, :Person1, "-yuun -yoon"],
+	    [:H_Singular, :Plural, :Person2, "-yuukna -yookna"],
+	    [:H_Singular, :Singular, :Person2, "-yuuk -yook"],
+	    [:H_Plural, :Plural, :Person3, "-yaah -yeeh"],
+	    [:H_Plural, :Singular, :Person1, "-yii -yee"],
+	    [:H_Plural, :Singular, :Person2, "-yaak -yeek"],
+	    [:H_Singular, :Plural, :Person3, "-yuuh -yooh"],
+	    [:H_Plural, :Singular, :Person3, "-yaah -yeeh"],
+	    [:H_Singular, :Singular, :Person3, "-yuuh -yooh"],
+	    [:H_Singular, :Singular, :Person1, "-yuu -yoo"]]
     }
 }
 
