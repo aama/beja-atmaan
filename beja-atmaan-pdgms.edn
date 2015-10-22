@@ -61,8 +61,7 @@
   :assí {:gloss "cover"}
   :aššig- {:gloss "be fast", :lemma "aššig-", }
   :ba {:lemma "bá’aa b’aa", :gloss "lie down"}
-  :bariy {:gloss "[x]", :lemma "[y]", }
-  :bariya {:conjClass :Irregular, :gloss "have", :lemma "bariya", :pos :Verb}
+  :bariy {:conjClass :Irregular, :gloss "have", :lemma "bariya", :pos :Verb}
   :bay {:conjClass :Prefix, :gloss "go", :lemma "baya", :pos :Verb}
   :bidil {:rootClass :CiCiC, :gloss "change"}
   :bireet {:gloss "rain"}
@@ -76,8 +75,7 @@
   :dir {:lemma " ", :gloss "kill"}
   :diy {:conjClass :Prefix, :gloss "say", :lemma "diya", :pos :Verb}
   :ee {:conjClass :Suffix, :gloss "come", :lemma " ", :pos :Verb}
-  :fay {:gloss "[x]", :lemma "[y]", }
-  :faya {:conjClass :Irregular, :gloss "be", :lemma "faya", :pos :Verb}
+  :fay {:conjClass :Irregular, :gloss "be", :lemma "faya", :pos :Verb}
   :fidig {:rootClass :CiCiC, :gloss "open"}
   :fir {:conjClass :Prefix, :gloss "go out", :lemma "fira", :pos :Verb}
   :fiyak {:conjClass :Prefix, :gloss "carry", :lemma "fiyaka", :pos :Verb}
@@ -173,7 +171,7 @@
 	    ["báadí"]]
     }
     {:label "beja_W-VIrregAffAor-hiy"
-    :note "Wedekind-etal2007 p. 123. The morphologically past form éefi,etc.,has present meaning."
+    :note "Wedekind-etal2007 p. 123. The morphologically past form éefi, etc., has present meaning."
     :common {:conjClass :Irregular,
 	    :lexeme :hiy,
 	    :polarity :Affirmative,
@@ -405,8 +403,7 @@
 	    [:Fem, :Singular, :Person3, "tindí"]]
     }
     {:label "beja_W-VIrregAffAor-fay"
-    :note "Wedekind-etal2007 p. 123. The morphologically past form éefi,etc.,has present
-            meaning."
+    :note "Wedekind-etal2007 p. 123. The morphologically past form éefi, etc., has present meaning."
     :common {:conjClass :Irregular,
 	    :lexeme :fay,
 	    :polarity :Affirmative,
@@ -423,8 +420,7 @@
 	    [:Masc, :Singular, :Person2, "tíifiya"]]
     }
     {:label "beja_W-VIrregAffPast-bariy"
-    :note "Wedekind-etal2007 p. 123. The morphologically past forms éefi,etc.,has present
-            meaning."
+    :note "Wedekind-etal2007 p. 123. The morphologically past forms éefi, etc., has present meaning."
     :common {:conjClass :Irregular,
 	    :lexeme :bariy,
 	    :polarity :Affirmative,
@@ -453,23 +449,6 @@
 	    [:Masc, :Singular, "báabáaya"],
 	    [:Fem, :Singular, "bíibáayi"],
 	    [:Common, :Plural, "báabéena"]]
-    }
-    {:label "beja_W-VNegFutureBecome-kta"
-    :note "Wedekind-etal2007 p. 154 (cf. also 152) (iikta become frm aka,kaya ?)"
-    :common {:lexeme :kta,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Future,
-	    :pdgmType :become}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person1, "ústaaz íikta káadi"],
-	    [:Masc, :Singular, :Person3, "ústaax íikta kíidi"],
-	    [:Common, :Plural, :Person3, "ustáz íikta kíidiin"],
-	    [:Fem, :Singular, :Person2, "ústaaz íikta kíddíi"],
-	    [:Common, :Plural, :Person2, "ustáz ikta kíddiina"],
-	    [:Fem, :Singular, :Person3, "ústaaz íikta kíddi"],
-	    [:Common, :Plural, :Person1, "ustaz níikta kíndi"],
-	    [:Masc, :Singular, :Person2, "ústaaz íikta kíddíya"]]
     }
     {:label "beja_W-VPrefCHiyNomAct"
     :note "Wedekind-etal2007 p. 106"
@@ -500,23 +479,6 @@
 	    [:Fem, :Singular, :Affirmative, "hindéeh tamíin!"],
 	    [:Masc, :Singular, :Affirmative, "diyáheeb!"],
 	    [:Fem, :Singular, :Negative, "bíidiiyihéeb!"]]
-    }
-    {:label "beja_W-VAffFuture-become"
-    :note "Wedekind-etal2007 p. 154 (cf. also 152) (iikta become frm aka,kaya ?)"
-    :common {:pdgmType :become,
-	    :lexeme :kay,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Future}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person2, "ustáz íikta téeyadna"],
-	    [:Masc, :Singular, :Person3, "ústaaz íkta índi"],
-	    [:Masc, :Singular, :Person2, "ústaaz íikta tíndíya"],
-	    [:Common, :Plural, :Person3, "ustáz íikta éeyadna"],
-	    [:Fem, :Singular, :Person2, "ústaaz íikta tíndíi"],
-	    [:Common, :Singular, :Person1, "ústaaz íikta ándi"],
-	    [:Fem, :Singular, :Person3, "ústaaz íikta tíndi"],
-	    [:Common, :Plural, :Person1, "ustáz níikta néeyad"]]
     }
     {:label "beja_W-VSuffAffVFin1Pres-agri"
     :note "Wedekind-etal2007 p. 95"
@@ -918,6 +880,24 @@
 	    [:Masc, :Singular, :Person3, "káam iid’ám índi"],
 	    [:Common, :Plural, :Person1, "kám níid’am néeyad"],
 	    [:Fem, :Singular, :Person2, "káam iid’ám tíndiyi"]]
+    }
+    {:label "beja_W-VAffFuture-become"
+    :note "Wedekind-etal2007 p. 154 (cf. also 152) (iikta become frm aka,kaya ?)"
+    :common {:conjClass :Prefix,
+             :pdgmType :become,
+	    :lexeme :kay,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Future}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person2, "ustáz íikta téeyadna"],
+	    [:Masc, :Singular, :Person3, "ústaaz íkta índi"],
+	    [:Masc, :Singular, :Person2, "ústaaz íikta tíndíya"],
+	    [:Common, :Plural, :Person3, "ustáz íikta éeyadna"],
+	    [:Fem, :Singular, :Person2, "ústaaz íikta tíndíi"],
+	    [:Common, :Singular, :Person1, "ústaaz íikta ándi"],
+	    [:Fem, :Singular, :Person3, "ústaaz íikta tíndi"],
+	    [:Common, :Plural, :Person1, "ustáz níikta néeyad"]]
     }
     {:label "beja_W-VPrefAffCayParticiple"
     :note "Wedekind-etal2007 p. 117"
@@ -1683,7 +1663,7 @@
 	    [:siniy, "síniya", "to be doing", "wait"],
 	    [:aha, "háya", "to do at once", "take"],
 	    [:diy, "díya", "to mean to do", "say"],
-	    [:sa, "sá’a", "to conitnue to do", "sit"],
+	    [:sa, "sá’a", "to continue to do", "sit"],
 	    [:diy, "d’íya", "to do completely", "put"],
 	    [:gad, "gáda", "to be about to do", "stand"]]
     }
@@ -2442,8 +2422,7 @@
 	    [:Masc, :Singular, :Person3, "itfiyík"]]
     }
     {:label "beja_W-VIrregAffPast-hiy"
-    :note "Wedekind-etal2007 p. 123. The morphologically past form éefi,etc.,has present
-            meaning."
+    :note "Wedekind-etal2007 p. 123. The morphologically past form éefi, etc., has present meaning."
     :common {:conjClass :Irregular,
 	    :lexeme :hiy,
 	    :polarity :Affirmative,
@@ -2472,23 +2451,6 @@
 	    :rootClass :HaCiC}
     :terms [[:token]  ;; schema
 	    ["bahar’iw"]]
-    }
-    {:label "beja_W-VAffFutureBecome-kta"
-    :note "Wedekind-etal2007 p. 154 (cf. also 152) (iikta become frm aka,kaya ?)"
-    :common {:lexeme :kta,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Future,
-	    :pdgmType :become}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Fem, :Singular, :Person3, "ústaaz íikta tíndi"],
-	    [:Masc, :Singular, :Person2, "ústaaz íikta tíndíya"],
-	    [:Fem, :Singular, :Person2, "ústaaz íikta tíndíi"],
-	    [:Common, :Singular, :Person1, "ústaaz íikta ándi"],
-	    [:Common, :Plural, :Person1, "ustáz níikta néeyad"],
-	    [:Common, :Plural, :Person3, "ustáz íikta éeyadna"],
-	    [:Masc, :Singular, :Person3, "ústaaz íkta índi"],
-	    [:Common, :Plural, :Person2, "ustáz íikta téeyadna"]]
     }
     {:label "beja_W-VPrefCiyAffImprtv-diy"
     :note "Wedekind-etal2007 p. 103"
@@ -2523,8 +2485,7 @@
 	    [:Fem, :Singular, :Person3, "rhitní"]]
     }
     {:label "beja_W-VIrregAffAor-bariy"
-    :note "Wedekind-etal2007 p. 123. The morphologically past forms éefi,etc.,has present
-            meaning."
+    :note "Wedekind-etal2007 p. 123. The morphologically past forms éefi, etc., has present meaning."
     :common {:conjClass :Irregular,
 	    :lexeme :bariy,
 	    :polarity :Affirmative,
@@ -3055,7 +3016,7 @@
     :note "Wedekind-etal2007 p. 133; D1.6.6"
     :common {:lexeme :hiy,
 	    :polarity :Affirmative,
-	    :pos :Var,
+	    :pos :Verb,
 	    :proClass :ObjSuffwVerb}
     :terms [[:gender, :genObj, :numObj, :number, :persObj, :person, :token]  ;; schema
 	    [:Masc, :O_Masc, :O_Singular, :Singular, :O_Person3, :Person3, "baróoh ihí"],
@@ -3079,7 +3040,7 @@
     {:label "beja_W-VNegObjSuffExx"
     :note "Wedekind-etal2007 p. 143"
     :common {:polarity :Negative,
-	    :pos :Var,
+	    :pos :Verb,
 	    :proClass :ObjSuffwVerb}
     :terms [[:gender, :genObj, :numObj, :number, :persObj, :person, :token, :lexeme, :token-gloss]  ;; schema
 	    [:Fem, :O_Common, :O_Singular, :Singular, :O_Person2, :Person1, "rhaatóok káaki", :rih, "I(F) did not see you(M/F)"],
@@ -3116,7 +3077,8 @@
     }
     {:label "beja_W-VNegFuture-become"
     :note "Wedekind-etal2007 p. 154 (cf. also 152) (iikta become frm aka,kaya ?)"
-    :common {:pdgmType :become,
+    :common {:conjClass :Prefix,
+             :pdgmType :become,
 	    :lexeme :kay,
 	    :polarity :Negative,
 	    :pos :Verb,
@@ -3128,7 +3090,7 @@
 	    [:Common, :Plural, :Person2, "ustáz ikta kíddiina"],
 	    [:Masc, :Singular, :Person2, "ústaaz íikta kíddíya"],
 	    [:Fem, :Singular, :Person2, "ústaaz íikta kíddíi"],
-	    [:Masc, :Singular, :Person3, "ústaax íikta kíidi"],
+	    [:Masc, :Singular, :Person3, "ústaaz íikta kíidi"],
 	    [:Common, :Plural, :Person3, "ustáz íikta kíidiin"]]
     }
     {:label "beja_W-VPrefNegCayParticiple"
@@ -3261,8 +3223,7 @@
 	    [:Participle,  :Negative,  "baayákay"]]
     }
     {:label "beja_W-VIrregAffPast-fay"
-    :note "Wedekind-etal2007 p. 123. The morphologically past form éefi,etc.,has present
-            meaning."
+    :note "Wedekind-etal2007 p. 123. The morphologically past form éefi, etc., has present meaning."
     :common {:conjClass :Irregular,
 	    :lexeme :fay,
 	    :polarity :Affirmative,
