@@ -1578,7 +1578,7 @@
 	    :pos :Verb,
 	    :tam :Future,
 	    :pdgmType :Intention}
-    :terms [[:lexeme, :number, :token, :token-gloss]  ;; schema
+    :terms [[:lexeme, :number, :token, :token-note]  ;; schema
 	    [:diy, :Plural, "náat níid’a néeyad", "shall do"],
 	    [:diy, :Singular, "náat íyaad ándi", "shall say"],
 	    [:diy, :Plural, "náat níyaad néeyad", "shall say"],
@@ -1602,27 +1602,27 @@
 	    :person :Person1,
 	    :pos :Verb,
 	    :pdgmType :Overview}
-    :terms [[:conjClass, :number, :tam, :token-aux, :token-main, :token]  ;; schema
-	    [:Suffix, :Plural, :Past, "_NULL", "yákna", "yákna   _NULL"],
-	    [:Suffix, :Singular, :Future, "ándi", "yáki ", "yáki    ándi"],
-	    [:Suffix, :Plural, :Future, "néeyad", "yákni ", "yákni    néeyad"],
-            [:Suffix, :Singular, :Past, "_NULL", "yakán ", "yakán    _NULL"],
-	    [:Suffix, :Singular, :Present, "_NULL", "yakáni ", "yakáni    _NULL"],
-	    [:Suffix, :Plural, :Present, "_NULL", "yáknay", "yáknay   _NULL"]]
+    :terms [[:conjClass, :number, :tam, :token-note-aux, :token]  ;; schema
+	    [:Suffix, :Plural, :Past, "_NULL",  "yákna   _NULL"],
+	    [:Suffix, :Singular, :Future, "ándi", "yáki    ándi"],
+	    [:Suffix, :Plural, :Future, "néeyad", "yákni    néeyad"],
+            [:Suffix, :Singular, :Past, "_NULL",  "yakán    _NULL"],
+	    [:Suffix, :Singular, :Present, "_NULL", "yakáni    _NULL"],
+	    [:Suffix, :Plural, :Present, "_NULL", "yáknay   _NULL"]]
     }
-    {:label "beja_W-VTenseAspOverview-yak"
+    {:label "beja_W-VTenseAspOverview-diy"
     :note "Wedekind-etal2007 Table #32"
     :common {:lexeme :diy,
 	    :person :Person1,
 	    :pos :Verb,
 	    :pdgmType :Overview}
-    :terms [[:conjClass, :number, :tam, :token-aux, :token-main, :token]  ;; schema
-	    [:Prefix, :Plural, :Future, "néeyad", "níyaad ", "níyaad    néeyad"],
-	    [:Prefix, :Plural, :Past, "_NULL", "nídi", "nídi   _NULL"],
-	    [:Prefix, :Singular, :Present, "_NULL", "ándi ", "ándi    _NULL"],
-	    [:Prefix, :Singular, :Future, "ándi", "íyaad ", "íyaad    ándi"],
-	    [:Prefix, :Singular, :Past, "_NULL", "ádi ", "ádi    _NULL"],
-	    [:Prefix, :Plural, :Present, "_NULL", "néeyad", "néeyad   _NULL"]]
+    :terms [[:conjClass, :number, :tam, :token-note-aux, :token]  ;; schema
+	    [:Prefix, :Plural, :Future, "néeyad",  "níyaad    néeyad"],
+	    [:Prefix, :Plural, :Past, "_NULL",  "nídi   _NULL"],
+	    [:Prefix, :Singular, :Present, "_NULL",  "ándi    _NULL"],
+	    [:Prefix, :Singular, :Future, "ándi",  "íyaad    ándi"],
+	    [:Prefix, :Singular, :Past, "_NULL",  "ádi    _NULL"],
+	    [:Prefix, :Plural, :Present, "_NULL",  "néeyad   _NULL"]]
     }
     {:label "beja_W-VPrefCiCiyNegAor-miriy"
     :note "Wedekind-etal2007 p. 111"
@@ -1658,14 +1658,14 @@
     :note "Wedekind-etal2007 Table #33"
     :common {:morphClass :AUX_OVERVIEW,
 	    :pos :Verb}
-    :terms [[:lexeme, :token, :token-auxFunction, :token-verbGloss]  ;; schema
-	    [:ba, "bá’aa b’aa", "to stop to do", "lie down"],
-	    [:siniy, "síniya", "to be doing", "wait"],
-	    [:aha, "háya", "to do at once", "take"],
-	    [:diy, "díya", "to mean to do", "say"],
-	    [:sa, "sá’a", "to continue to do", "sit"],
-	    [:diy, "d’íya", "to do completely", "put"],
-	    [:gad, "gáda", "to be about to do", "stand"]]
+    :terms [[:lexeme, :token, :token-note-auxGloss]  ;; schema
+	    [:ba, "bá’aa b’aa", "\"to stop to do\", >lie down"],
+	    [:siniy, "síniya", "\"to be doing\", >wait"],
+	    [:aha, "háya", "\"to do at once\", >take"],
+	    [:diy, "díya", "\"to mean to do\", >say"],
+	    [:sa, "sá’a", "\"to continue to do\", >sit"],
+	    [:diy, "d’íya", "\"to do completely\", >put"],
+	    [:gad, "gáda", "\"to be about to do\", >stand"]]
     }
     {:label "beja_W-VPrefCaCNegFuture-naw"
     :note "Wedekind-etal2007 p. 115"
@@ -2968,7 +2968,7 @@
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :pdgmType :NegAux}
-    :terms [[:token, :token-gloss]  ;; schema
+    :terms [[:token, :token-note]  ;; schema
 	    ["oosdík usóotiyu iríb", "He did not tell the truth"],
 	    ["siniyáayu kíiki", "He does not wait for me"],
 	    ["siníitu iríb", "He did not wait for me"],
@@ -3042,7 +3042,7 @@
     :common {:polarity :Negative,
 	    :pos :Verb,
 	    :proClass :ObjSuffwVerb}
-    :terms [[:gender, :genObj, :numObj, :number, :persObj, :person, :token, :lexeme, :token-gloss]  ;; schema
+    :terms [[:gender, :genObj, :numObj, :number, :persObj, :person, :token, :lexeme, :token-note]  ;; schema
 	    [:Fem, :O_Common, :O_Singular, :Singular, :O_Person2, :Person1, "rhaatóok káaki", :rih, "I(F) did not see you(M/F)"],
 	    [:Masc, :O_Masc, :O_Singular, :Singular, :O_Person3, :Person3, "(baróoh) rháab kíiki", :rih, "he did not see (him)"],
 	    [:Masc, :O_Common, :O_Plural, :Singular, :O_Person1, :Person2, "rháayoon kíttaa", :rih, "you(M) did not see us"],
@@ -3324,7 +3324,7 @@
     :common {:morphClass :NOMINALIZATIONPATTERNS,
 	    :pos :Verb,
 	    :pdgmType :NominalizationPatterns}
-    :terms [[:conjClass, :lexeme, :token, :token-example]  ;; schema
+    :terms [[:conjClass, :lexeme, :token, :token-note]  ;; schema
 	    [:Prefix, :kan, "kan-a → tu-kanaan", "know → the knowledge"],
 	    [:Prefix, :kitim, "kitim-a → oo-ktuum", "arrive → the arrival"],
 	    [:Prefix, :bis, "bis-a → oo-baas", "bury - goes_to the burial"],
@@ -3608,7 +3608,7 @@
 	    :pos :Verb,
 	    :tam :Aorist,
 	    :pdgmType :Repetitive}
-    :terms [[:derivedStemAug, :lexeme, :token, :token-gloss]  ;; schema
+    :terms [[:derivedStemAug, :lexeme, :token, :token-note]  ;; schema
 	    [:Repetitive, :dir, "gwíbaab dáara ándi", "want kill rats"],
 	    [:Repetitive, :sdd, "móoz šadhiidháni", "peel bananas"],
 	    [:Simple, :gad, "awéeb gída ándi", "want throw stone"],
