@@ -3506,7 +3506,7 @@
 	    :lexeme :yak,
              :polarity :Negative,
 	    :pos :Verb,
-	    :tam :Impertive}
+             :tam :Imperative}
     :terms [[:gender, :number, :person, :token]  ;; schema
             [:Masc, :Singular, :Person2, "báayákaa!"]
             [:Fem, :Singular, :Person2, "bíiyákii!"]
