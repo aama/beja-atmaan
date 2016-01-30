@@ -2,7 +2,7 @@
 :lang :beja-atmaan
 :sgpref "bat"
 :datasource "Wedekind-etal2007"
-:datasourceNotes "Wedekind uses the term 'Past Continuous' for what is here termed 'Aoris'"
+:datasourceNotes "Wedekind uses the term 'Past Continuous' for what is here termed ':Aorist'"
 :geodemoURL "http://www.ethnologue.com/language/bej"
 :geodemoTXT "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan, Eritrea, and Egypt by more than a million individuals. The Atmaan variety is spoken in Eastern Sudan, and is described in Wedekind-etal2007."
 :schemata {
@@ -1967,8 +1967,8 @@
 	    [:Common, :Plural, :Person2, "tíd’ina"],
 	    [:Masc, :Singular, :Person2, "dán’íya"],
 	    [:Fem, :Singular, :Person2, "dán’íi"],
-	    [:Common, :Plural, :Person1, "níd’I néed’i"],
-	    [:Common, :Singular, :Person1, "adán’I ánd’i"]]
+	    [:Common, :Plural, :Person1, "níd’I ~ néed’i"],
+	    [:Common, :Singular, :Person1, "adán’I ~ ánd’i"]]
     }
     {:label "beja_W-VPrefCiCiyAffParticiple-miriy"
     :note "Wedekind-etal2007 p. 111"
@@ -2620,8 +2620,8 @@
 	    [:Common, :Plural, :Person2, "téetniiwna"],
 	    [:Masc, :Singular, :Person3, "eetníiw"],
 	    [:Fem, :Singular, :Person2, "teetníiwi"],
-	    [:Common, :Plural, :Person1, "néetniiw neénawi"],
-	    [:Common, :Singular, :Person1, "eetníiw eenáwi"]]
+	    [:Common, :Plural, :Person1, "néetniiw ~ neénawi"],
+	    [:Common, :Singular, :Person1, "eetníiw ~ eenáwi"]]
     }
     {:label "beja_W-VPrefCiCiCNegParticiple-sibib"
     :note "Wedekind-etal2007 p. 109"
