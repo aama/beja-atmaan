@@ -177,32 +177,32 @@
             :pos :Verb,
             :tam :Aorist,
             :pdgmType :Repetitive}
-    :terms [[:derivedStemAug :lexeme :token-note :token] ;; schema
-            [:Repetitive :dir "kill rats" "igwíba éedri"]
-            [:Repetitive :dir "want kill rats" "gwíbaab dáara ándi"]
-            [:Repetitive :gid "throw stones" "áweeb géedáni"]
-            [:Repetitive :gid "want throw stones" "áweeb géeda ándi"]
-            [:Repetitive :sdd "peel bananas" "móoz šadhiidháni"]
-            [:Repetitive :sdd "want peel bananas" "móoz šadhíidha ándi"]
-            [:Simple :dir "kill rat" "oogwíb ándiir"]
-            [:Simple :gad "want throw stone" "awéeb gída ándi"]
-            [:Simple :gid "throw stone" "awéeb ángiid"]
-            [:Simple :gid "want kill rat" "gwíb díra ándi"]
-            [:Simple :sdd "peel banana" "móoz ašándhiidh"]
-            [:Simple :sdd "want peel banana" "móoz šídhidha ándi"]]
+    :terms [[:derivedStemAug :lexeme :token :token-note] ;; schema
+            [:Repetitive :dir "gwíbaab dáara ándi" "want kill rats"]
+            [:Repetitive :dir "igwíba éedri" "kill rats"]
+            [:Repetitive :gid "áweeb géeda ándi" "want throw stones"]
+            [:Repetitive :gid "áweeb géedáni" "throw stones"]
+            [:Repetitive :sdd "móoz šadhiidháni" "peel bananas"]
+            [:Repetitive :sdd "móoz šadhíidha ándi" "want peel bananas"]
+            [:Simple :dir "oogwíb ándiir" "kill rat"]
+            [:Simple :gad "awéeb gída ándi" "want throw stone"]
+            [:Simple :gid "awéeb ángiid" "throw stone"]
+            [:Simple :gid "gwíb díra ándi" "want kill rat"]
+            [:Simple :sdd "móoz šídhidha ándi" "want peel banana"]
+            [:Simple :sdd "móoz ašándhiidh" "peel banana"]]
     }
     {:label "beja_W-VAuxOverview"
     :note "Wedekind-etal2007 Table #33"
     :common {:morphClass :AUX_OVERVIEW,
             :pos :Verb}
-    :terms [[:lexeme :token-note-auxGloss :token] ;; schema
-            [:aha "\"to do at once\", >take" "háya"]
-            [:ba "\"to stop to do\", >lie down" "bá’aa b’aa"]
-            [:diy "\"to do completely\", >put" "d’íya"]
-            [:diy "\"to mean to do\", >say" "díya"]
-            [:gad "\"to be about to do\", >stand" "gáda"]
-            [:sa "\"to continue to do\", >sit" "sá’a"]
-            [:siniy "\"to be doing\", >wait" "síniya"]]
+    :terms [[:lexeme :token :token-note-auxGloss] ;; schema
+            [:aha "háya" "\"to do at once\", >take"]
+            [:ba "bá’aa b’aa" "\"to stop to do\", >lie down"]
+            [:diy "díya" "\"to mean to do\", >say"]
+            [:diy "d’íya" "\"to do completely\", >put"]
+            [:gad "gáda" "\"to be about to do\", >stand"]
+            [:sa "sá’a" "\"to continue to do\", >sit"]
+            [:siniy "síniya" "\"to be doing\", >wait"]]
     }
     {:label "beja_W-VAuxPut-dilib"
     :note "Wedekind-etal2007 p. 156. The aux aha take and diya put with verb diliba trade
@@ -528,8 +528,8 @@
             :polarity :Negative,
             :pos :Verb,
             :pdgmType :NegAux}
-    :terms [[:token-note :token] ;; schema
-(["Do you not want to buy?" "dilbát karéetáa?"] ["He did not tell the truth" "oosdík usóotiyu iríb"] ["He did not wait for me" "siníitu iríb"] ["He does not wait for me" "siniyáayu kíiki"] ["He failed to reconcile" "y’adíl igwóoy"] ["I did not see" "rhát aríb"] ["I missed/failed to find" "aharíw anáw"] ["They do not wait for me" "siniyáayi kíikeen"]]
+    :terms [[:token :token-note] ;; schema
+            ["oosdík usóotiyu iríb" "He did not tell the truth"] ["siniyáayu kíiki" "He does not wait for me"] ["siníitu iríb" "He did not wait for me"] ["aharíw anáw" "I missed/failed to find"] ["y’adíl igwóoy" "He failed to reconcile"] ["siniyáayi kíikeen" "They do not wait for me"] ["dilbát karéetáa?" "Do you not want to buy?"] ["rhát aríb" "I did not see"]]
     }
     {:label "beja_W-VNegNegCop-kay"
     :note "Wedekind-etal2007 p. 143"
@@ -552,50 +552,50 @@
     :common {:polarity :Negative,
             :pos :Verb,
             :proClass :ObjSuffwVerb}
-    :terms [[:genObj :lexeme :numObj :persObj :token-note :number :person :gender :token] ;; schema
-            [:O_Common :kan :O_Plural :O_Person2 "no - I do not know you" :Plural :Person1 :Common "láa láa kínkanhookna"]
-            [:O_Common :kan :O_Plural :O_Person2 "yes - we know you" :Plural :Person1 :Common "awóoh niktéenhookna"]
-            [:O_Common :rih :O_Plural :O_Person1 "you(M) did not see us" :Singular :Person2 :Masc "rháayoon kíttaa"]
-            [:O_Common :rih :O_Plural :O_Person3 "I(M) did not see them" :Singular :Person1 :Masc "rháayhoona káaki"]
-            [:O_Common :rih :O_Singular :O_Person1 "you(F) did not see me" :Singular :Person2 :Fem "rháatu kíttaayi"]
-            [:O_Common :rih :O_Singular :O_Person1 "you(M) did not see me" :Singular :Person2 :Masc "rháayu kíttaa"]
-            [:O_Common :rih :O_Singular :O_Person2 "I(F) did not see you(M/F)" :Singular :Person1 :Fem "rhaatóok káaki"]
-            [:O_Common :rih :O_Singular :O_Person2 "I(M) did not see you(M/F)" :Singular :Person1 :Masc "rhaayóok káaki"]
-            [:O_Common :rih :Plural :O_Person1 "you(F) did not see us" :Singular :Person2 :Fem "rhaatóon kíttaayi"]
-            [:O_Common :rih :Plural :O_Person2 "I(F) did not see you(PL)" :Singular :Person1 :Fem "rháatookna káaki"]
-            [:O_Common :rih :Plural :O_Person2 "I(M) did not see you(PL)" :Singular :Person1 :Masc "rháayookna káaki"]
-            [:O_Common :rih :Plural :O_Person3 "I(F) did not see them" :Singular :Person1 :Fem "rháatehoona káaki"]
-            [:O_Common :rih :Plural :O_Person3 "you(F) did not see them" :Singular :Person2 :Fem "rháatehoona kíttaayi"]
-            [:O_Common :rih :Plural :O_Person3 "you(M) did not see them" :Singular :Person2 :Masc "(baréeh) rháab kíttaa"]
-            [:O_Masc :kan :O_Singular :O_Person2 "no - I do not know you" :Singular :Person1 :Common "láa láa káakanhóok"]
-            [:O_Masc :kan :O_Singular :O_Person2 "yes - I know you" :Singular :Person1 :Common "awóoh aktéenhóok"]
-            [:O_Masc :kan :O_Singular :O_Person3 "I havent known it/him" :Singular :Person1 :Masc "áni kanáab"]
-            [:O_Masc :kan :O_Singular :O_Person3 "I(F) havent known it/him" :Singular :Person1 :Fem "kanáat káaki"]
-            [:O_Masc :kan :O_Singular :O_Person3 "he hasnt known it/him" :Singular :Person3 :Masc "barúuh kanáab kíiki"]
-            [:O_Masc :kan :O_Singular :O_Person3 "they(F) havent known it/him" :Plural :Person3 :Fem "baraah kánaat kíikeen"]
-            [:O_Masc :kan :O_Singular :O_Person3 "they(M) havent known it/him" :Plural :Person3 :Masc "baráah kánaab"]
-            [:O_Masc :kan :O_Singular :O_Person3 "we havent known it/him" :Plural :Person1 :Common "hinín kánaab kínki"]
-            [:O_Masc :kan :O_Singular :O_Person3 "you(F) havent known it/him" :Singular :Person2 :Fem "batúuk kanáat kíttaayi"]
-            [:O_Masc :kan :O_Singular :O_Person3 "you(F) havent known it/him" :Plural :Person2 :Fem "bataakna kánaat kítteena"]
-            [:O_Masc :kan :O_Singular :O_Person3 "you(M) havent known it/him" :Singular :Person2 :Masc "barúuk kanáab kíttaa"]
-            [:O_Masc :kan :O_Singular :O_Person3 "you(M) havent known it/him" :Plural :Person2 :Masc "baráakna kánaab"]
-            [:O_Masc :kan :O_Singular :O_Person3 "še hasnt known it/him" :Singular :Person3 :Fem "batúuh kanáat kítti"]
-            [:O_Masc :rih :O_Singular :O_Person3 "I(F) did not see (him)" :Singular :Person1 :Fem "(baróoh) rháat káaki"]
-            [:O_Masc :rih :O_Singular :O_Person3 "I(M) did not see (him)" :Singular :Person1 :Masc "(baróoh) rháab káaki"]
-            [:O_Masc :rih :O_Singular :O_Person3 "he did not see (him)" :Singular :Person3 :Masc "(baróoh) rháab kíiki"]
-            [:O_Masc :rih :O_Singular :O_Person3 "še did not see (him)" :Singular :Person3 :Fem "(baróoh) rháat kítti"]]
+    :terms [[:genObj :lexeme :numObj :persObj :number :person :gender :token :token-note] ;; schema
+            [:O_Common :kan :O_Plural :O_Person2 :Plural :Person1 :Common "láa láa kínkanhookna" "no - I do not know you"]
+            [:O_Common :kan :O_Plural :O_Person2 :Plural :Person1 :Common "awóoh niktéenhookna" "yes - we know you"]
+            [:O_Common :rih :O_Plural :O_Person1 :Singular :Person2 :Masc "rháayoon kíttaa" "you(M) did not see us"]
+            [:O_Common :rih :O_Plural :O_Person3 :Singular :Person1 :Masc "rháayhoona káaki" "I(M) did not see them"]
+            [:O_Common :rih :O_Singular :O_Person1 :Singular :Person2 :Masc "rháayu kíttaa" "you(M) did not see me"]
+            [:O_Common :rih :O_Singular :O_Person1 :Singular :Person2 :Fem "rháatu kíttaayi" "you(F) did not see me"]
+            [:O_Common :rih :O_Singular :O_Person2 :Singular :Person1 :Masc "rhaayóok káaki" "I(M) did not see you(M/F)"]
+            [:O_Common :rih :O_Singular :O_Person2 :Singular :Person1 :Fem "rhaatóok káaki" "I(F) did not see you(M/F)"]
+            [:O_Common :rih :Plural :O_Person1 :Singular :Person2 :Fem "rhaatóon kíttaayi" "you(F) did not see us"]
+            [:O_Common :rih :Plural :O_Person2 :Singular :Person1 :Masc "rháayookna káaki" "I(M) did not see you(PL)"]
+            [:O_Common :rih :Plural :O_Person2 :Singular :Person1 :Fem "rháatookna káaki" "I(F) did not see you(PL)"]
+            [:O_Common :rih :Plural :O_Person3 :Singular :Person1 :Fem "rháatehoona káaki" "I(F) did not see them"]
+            [:O_Common :rih :Plural :O_Person3 :Singular :Person2 :Masc "(baréeh) rháab kíttaa" "you(M) did not see them"]
+            [:O_Common :rih :Plural :O_Person3 :Singular :Person2 :Fem "rháatehoona kíttaayi" "you(F) did not see them"]
+            [:O_Masc :kan :O_Singular :O_Person2 :Singular :Person1 :Common "láa láa káakanhóok" "no - I do not know you"]
+            [:O_Masc :kan :O_Singular :O_Person2 :Singular :Person1 :Common "awóoh aktéenhóok" "yes - I know you"]
+            [:O_Masc :kan :O_Singular :O_Person3 :Singular :Person1 :Masc "áni kanáab" "I havent known it/him"]
+            [:O_Masc :kan :O_Singular :O_Person3 :Singular :Person1 :Fem "kanáat káaki" "I(F) havent known it/him"]
+            [:O_Masc :kan :O_Singular :O_Person3 :Singular :Person2 :Masc "barúuk kanáab kíttaa" "you(M) havent known it/him"]
+            [:O_Masc :kan :O_Singular :O_Person3 :Singular :Person2 :Fem "batúuk kanáat kíttaayi" "you(F) havent known it/him"]
+            [:O_Masc :kan :O_Singular :O_Person3 :Singular :Person3 :Masc "barúuh kanáab kíiki" "he hasnt known it/him"]
+            [:O_Masc :kan :O_Singular :O_Person3 :Singular :Person3 :Fem "batúuh kanáat kítti" "še hasnt known it/him"]
+            [:O_Masc :kan :O_Singular :O_Person3 :Plural :Person1 :Common "hinín kánaab kínki" "we havent known it/him"]
+            [:O_Masc :kan :O_Singular :O_Person3 :Plural :Person2 :Masc "baráakna kánaab" "you(M) havent known it/him"]
+            [:O_Masc :kan :O_Singular :O_Person3 :Plural :Person2 :Fem "bataakna kánaat kítteena" "you(F) havent known it/him"]
+            [:O_Masc :kan :O_Singular :O_Person3 :Plural :Person3 :Masc "baráah kánaab" "they(M) havent known it/him"]
+            [:O_Masc :kan :O_Singular :O_Person3 :Plural :Person3 :Fem "baraah kánaat kíikeen" "they(F) havent known it/him"]
+            [:O_Masc :rih :O_Singular :O_Person3 :Singular :Person1 :Masc "(baróoh) rháab káaki" "I(M) did not see (him)"]
+            [:O_Masc :rih :O_Singular :O_Person3 :Singular :Person1 :Fem "(baróoh) rháat káaki" "I(F) did not see (him)"]
+            [:O_Masc :rih :O_Singular :O_Person3 :Singular :Person3 :Masc "(baróoh) rháab kíiki" "he did not see (him)"]
+            [:O_Masc :rih :O_Singular :O_Person3 :Singular :Person3 :Fem "(baróoh) rháat kítti" "še did not see (him)"]]
     }
     {:label "beja_W-VNominalizationPatterns"
     :note "Wedekind-etal2007 Table #34-35"
     :common {:morphClass :NOMINALIZATIONPATTERNS,
             :pos :Verb,
             :pdgmType :NominalizationPatterns}
-    :terms [[:conjClass :lexeme :token-note :token] ;; schema
-            [:Prefix :bis "bury - goes_to the burial" "bis-a → oo-baas"]
-            [:Prefix :kan "inform → the information" "sookin-a → tu-sook-nooy"]
-            [:Prefix :kan "know → the knowledge" "kan-a → tu-kanaan"]
-            [:Prefix :kitim "arrive → the arrival" "kitim-a → oo-ktuum"]
-            [:Suffix :yak "from start → the starting" "yakaa → uyakti"]]
+    :terms [[:conjClass :lexeme :token :token-note] ;; schema
+            [:Prefix :bis "bis-a → oo-baas" "bury - goes_to the burial"]
+            [:Prefix :kan "kan-a → tu-kanaan" "know → the knowledge"]
+            [:Prefix :kan "sookin-a → tu-sook-nooy" "inform → the information"]
+            [:Prefix :kitim "kitim-a → oo-ktuum" "arrive → the arrival"]
+            [:Suffix :yak "yakaa → uyakti" "from start → the starting"]]
     }
     {:label "beja_W-VPrefAffCHiyParticiple"
     :note "Wedekind-etal2007 p. 106"
@@ -608,7 +608,7 @@
             :pos :Verb,
             :rootClass :CHiy}
     :terms [[:token] ;; schema
-(["d’íyaab"]]
+            ["d’íyaab"]]
     }
     {:label "beja_W-VPrefAffCaCParticiple"
     :note "Wedekind-etal2007 p. 115"
@@ -621,7 +621,7 @@
             :pos :Verb,
             :rootClass :CaC}
     :terms [[:token] ;; schema
-(["nawáab"]]
+            ["nawáab"]]
     }
     {:label "beja_W-VPrefAffCayParticiple"
     :note "Wedekind-etal2007 p. 117"
@@ -634,7 +634,7 @@
             :pos :Verb,
             :rootClass :Cay}
     :terms [[:token] ;; schema
-(["bayáab abáay"]]
+            ["bayáab abáay"]]
     }
     {:label "beja_W-VPrefAffCiCHParticiple"
     :note "Wedekind-etal2007 p. 121"
@@ -647,7 +647,7 @@
             :pos :Verb,
             :rootClass :CiCH}
     :terms [[:token] ;; schema
-(["fir’áab"]]
+            ["fir’áab"]]
     }
     {:label "beja_W-VPrefAffCiCParticiple"
     :note "Wedekind-etal2007 p. 107"
@@ -660,7 +660,7 @@
             :pos :Verb,
             :rootClass :CiC}
     :terms [[:token] ;; schema
-(["ribáab"]]
+            ["ribáab"]]
     }
     {:label "beja_W-VPrefAffCiCaCParticiple"
     :note "Wedekind-etal2007 p. 119"
@@ -673,7 +673,7 @@
             :pos :Verb,
             :rootClass :CiCaC}
     :terms [[:token] ;; schema
-(["fayáak"]]
+            ["fayáak"]]
     }
     {:label "beja_W-VPrefAffCiCiCParticiple"
     :note "Wedekind-etal2007 p. 109"
@@ -686,7 +686,7 @@
             :pos :Verb,
             :rootClass :CiCiC}
     :terms [[:token] ;; schema
-(["šibbáab"]]
+            ["šibbáab"]]
     }
     {:label "beja_W-VPrefAffCiCiyParticiple"
     :note "Wedekind-etal2007 p. 111"
@@ -699,7 +699,7 @@
             :pos :Verb,
             :rootClass :CiCiy}
     :terms [[:token] ;; schema
-(["miriyáab"]]
+            ["miriyáab"]]
     }
     {:label "beja_W-VPrefAffCiyParticiple"
     :note "Wedekind-etal2007 p. 103"
@@ -712,7 +712,7 @@
             :pos :Verb,
             :rootClass :Ciy}
     :terms [[:token] ;; schema
-(["diyáab"]]
+            ["diyáab"]]
     }
     {:label "beja_W-VPrefAffFuture-dam"
     :note "Wedekind-etal2007 p. 152"
@@ -743,7 +743,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["ihíriw ándi"]]
+            ["ihíriw ándi"]]
     }
     {:label "beja_W-VPrefAffHaCiCParticiple"
     :note "Wedekind-etal2007 p. 113"
@@ -756,7 +756,7 @@
             :pos :Verb,
             :rootClass :HaCiC}
     :terms [[:token] ;; schema
-(["harwáab"]]
+            ["harwáab"]]
     }
     {:label "beja_W-VPrefCHiyAffAor-diy"
     :note "Wedekind-etal2007 p. 106"
@@ -788,7 +788,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["íid’a ad’a ándi"]]
+            ["íid’a ad’a ándi"]]
     }
     {:label "beja_W-VPrefCHiyAffImprtv-diy"
     :note "Wedekind-etal2007 p. 106"
@@ -815,7 +815,7 @@
             :pos :Verb,
             :rootClass :CHiy}
     :terms [[:token] ;; schema
-(["d’íyaab"]]
+            ["d’íyaab"]]
     }
     {:label "beja_W-VPrefCHiyAffPast-diy"
     :note "Wedekind-etal2007 p. 106"
@@ -865,7 +865,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["íid’a káadi"]]
+            ["íid’a káadi"]]
     }
     {:label "beja_W-VPrefCHiyNegImprtv-diy"
     :note "Wedekind-etal2007 p. 106"
@@ -892,7 +892,7 @@
             :pos :Verb,
             :rootClass :CHiy}
     :terms [[:token] ;; schema
-(["baad’iiyay"]]
+            ["baad’iiyay"]]
     }
     {:label "beja_W-VPrefCHiyNegPast-diy"
     :note "Wedekind-etal2007 p. 106"
@@ -940,7 +940,7 @@
             :pos :Verb,
             :rootClass :CHiy}
     :terms [[:token] ;; schema
-(["óo-d’uuy"]]
+            ["óo-d’uuy"]]
     }
     {:label "beja_W-VPrefCHiyNomAct-diy"
     :note "Wedekind-etal2007 p. 106"
@@ -952,7 +952,7 @@
             :pos :Verb,
             :rootClass :CHiy}
     :terms [[:token] ;; schema
-(["óo-d’uuy"]]
+            ["óo-d’uuy"]]
     }
     {:label "beja_W-VPrefCaCAffAor-naw"
     :note "Wedekind-etal2007 p. 115"
@@ -984,7 +984,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["íitna íinaw ándi"]]
+            ["íitna íinaw ándi"]]
     }
     {:label "beja_W-VPrefCaCAffImprtv-naw"
     :note "Wedekind-etal2007 p. 115"
@@ -1011,7 +1011,7 @@
             :pos :Verb,
             :rootClass :CaC}
     :terms [[:token] ;; schema
-(["nawáab"]]
+            ["nawáab"]]
     }
     {:label "beja_W-VPrefCaCAffPast-naw"
     :note "Wedekind-etal2007 p. 115"
@@ -1061,7 +1061,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["íitnaw káadi"]]
+            ["íitnaw káadi"]]
     }
     {:label "beja_W-VPrefCaCNegImprtv-naw"
     :note "Wedekind-etal2007 p. 115"
@@ -1088,7 +1088,7 @@
             :pos :Verb,
             :rootClass :CaC}
     :terms [[:token] ;; schema
-(["banáaway"]]
+            ["banáaway"]]
     }
     {:label "beja_W-VPrefCaCNegPast-naw"
     :note "Wedekind-etal2007 p. 115"
@@ -1136,7 +1136,7 @@
             :pos :Verb,
             :rootClass :CaC}
     :terms [[:token] ;; schema
-(["óo-naaw"]]
+            ["óo-naaw"]]
     }
     {:label "beja_W-VPrefCaCNomAct-naw"
     :note "Wedekind-etal2007 p. 115"
@@ -1148,7 +1148,7 @@
             :pos :Verb,
             :rootClass :CaC}
     :terms [[:token] ;; schema
-(["óo-naaw"]]
+            ["óo-naaw"]]
     }
     {:label "beja_W-VPrefCayAffAor-bay"
     :note "Wedekind-etal2007 p. 117"
@@ -1180,7 +1180,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["íiba ándi"]]
+            ["íiba ándi"]]
     }
     {:label "beja_W-VPrefCayAffImprtv-bay"
     :note "Wedekind-etal2007 p. 117"
@@ -1207,7 +1207,7 @@
             :pos :Verb,
             :rootClass :Cay}
     :terms [[:token] ;; schema
-(["bayáab abáay"]]
+            ["bayáab abáay"]]
     }
     {:label "beja_W-VPrefCayAffPast-bay"
     :note "Wedekind-etal2007 p. 117"
@@ -1257,7 +1257,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["íiba káadi"]]
+            ["íiba káadi"]]
     }
     {:label "beja_W-VPrefCayNegImprtv-bay"
     :note "Wedekind-etal2007 p. 117"
@@ -1284,7 +1284,7 @@
             :pos :Verb,
             :rootClass :Cay}
     :terms [[:token] ;; schema
-(["baabáay"]]
+            ["baabáay"]]
     }
     {:label "beja_W-VPrefCayNegPast-bay"
     :note "Wedekind-etal2007 p. 117"
@@ -1332,7 +1332,7 @@
             :pos :Verb,
             :rootClass :Cay}
     :terms [[:token] ;; schema
-(["i-míibi i-mábay"]]
+            ["i-míibi i-mábay"]]
     }
     {:label "beja_W-VPrefCayNomAct-bay"
     :note "Wedekind-etal2007 p. 117"
@@ -1344,7 +1344,7 @@
             :pos :Verb,
             :rootClass :Cay}
     :terms [[:token] ;; schema
-(["i-míibi i-mábay"]]
+            ["i-míibi i-mábay"]]
     }
     {:label "beja_W-VPrefCiCAffAor-rib"
     :note "Wedekind-etal2007 p. 107"
@@ -1376,7 +1376,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["íirib ándi"]]
+            ["íirib ándi"]]
     }
     {:label "beja_W-VPrefCiCAffImprtv-rib"
     :note "Wedekind-etal2007 p. 107"
@@ -1403,7 +1403,7 @@
             :pos :Verb,
             :rootClass :CiC}
     :terms [[:token] ;; schema
-(["ribáab"]]
+            ["ribáab"]]
     }
     {:label "beja_W-VPrefCiCAffPast-rib"
     :note "Wedekind-etal2007 p. 107"
@@ -1471,7 +1471,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["itffír’a ndi"]]
+            ["itffír’a ndi"]]
     }
     {:label "beja_W-VPrefCiCHAffImprtv-fir"
     :note "Wedekind-etal2007 p. 121"
@@ -1498,7 +1498,7 @@
             :pos :Verb,
             :rootClass :CiCH}
     :terms [[:token] ;; schema
-(["fir’áab"]]
+            ["fir’áab"]]
     }
     {:label "beja_W-VPrefCiCHAffPast-fir"
     :note "Wedekind-etal2007 p. 121"
@@ -1548,7 +1548,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["itfír’a káadi"]]
+            ["itfír’a káadi"]]
     }
     {:label "beja_W-VPrefCiCHNegImprtv-fir"
     :note "Wedekind-etal2007 p. 121"
@@ -1575,7 +1575,7 @@
             :pos :Verb,
             :rootClass :CiCH}
     :terms [[:token] ;; schema
-(["báafar’a"]]
+            ["báafar’a"]]
     }
     {:label "beja_W-VPrefCiCHNegPast-fir"
     :note "Wedekind-etal2007 p. 121"
@@ -1623,7 +1623,7 @@
             :pos :Verb,
             :rootClass :CiCH}
     :terms [[:token] ;; schema
-(["tu-mifir’óoy"]]
+            ["tu-mifir’óoy"]]
     }
     {:label "beja_W-VPrefCiCHNomAct-fir"
     :note "Wedekind-etal2007 p. 121"
@@ -1635,7 +1635,7 @@
             :pos :Verb,
             :rootClass :CiCH}
     :terms [[:token] ;; schema
-(["tu-mifir’óoy"]]
+            ["tu-mifir’óoy"]]
     }
     {:label "beja_W-VPrefCiCNegFuture-rib"
     :note "Wedekind-etal2007 p. 107"
@@ -1649,7 +1649,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["íirib káadi"]]
+            ["íirib káadi"]]
     }
     {:label "beja_W-VPrefCiCNegImprtv-rib"
     :note "Wedekind-etal2007 p. 107"
@@ -1676,7 +1676,7 @@
             :pos :Verb,
             :rootClass :CiC}
     :terms [[:token] ;; schema
-(["báaríib"]]
+            ["báaríib"]]
     }
     {:label "beja_W-VPrefCiCNegPast-rib"
     :note "Wedekind-etal2007 p. 107"
@@ -1724,7 +1724,7 @@
             :pos :Verb,
             :rootClass :CiC}
     :terms [[:token] ;; schema
-(["óo-raab"]]
+            ["óo-raab"]]
     }
     {:label "beja_W-VPrefCiCNominalAction-rib"
     :note "Wedekind-etal2007 p. 107"
@@ -1736,7 +1736,7 @@
             :pos :Verb,
             :rootClass :CiC}
     :terms [[:token] ;; schema
-(["óo-raab"]]
+            ["óo-raab"]]
     }
     {:label "beja_W-VPrefCiCaCAffAor-fiyak"
     :note "Wedekind-etal2007 p. 119"
@@ -1768,7 +1768,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["itfiyák ándi"]]
+            ["itfiyák ándi"]]
     }
     {:label "beja_W-VPrefCiCaCAffImprtv-fiyak"
     :note "Wedekind-etal2007 p. 119"
@@ -1795,7 +1795,7 @@
             :pos :Verb,
             :rootClass :CiCaC}
     :terms [[:token] ;; schema
-(["fayáak"]]
+            ["fayáak"]]
     }
     {:label "beja_W-VPrefCiCaCAffPast-fiyak"
     :note "Wedekind-etal2007 p. 119"
@@ -1863,7 +1863,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["itfiyák káadi"]]
+            ["itfiyák káadi"]]
     }
     {:label "beja_W-VPrefCiCaCNegImprtv-fiyak"
     :note "Wedekind-etal2007 p. 119"
@@ -1890,7 +1890,7 @@
             :pos :Verb,
             :rootClass :CiCaC}
     :terms [[:token] ;; schema
-(["báafiyáak"]]
+            ["báafiyáak"]]
     }
     {:label "beja_W-VPrefCiCaCNegPres-fiyak"
     :note "Wedekind-etal2007 p. 119"
@@ -1920,7 +1920,7 @@
             :pos :Verb,
             :rootClass :CiCaC}
     :terms [[:token] ;; schema
-(["tu-mifyéek tu-mifiyéek"]]
+            ["tu-mifyéek tu-mifiyéek"]]
     }
     {:label "beja_W-VPrefCiCaCNomAct-fiyak"
     :note "Wedekind-etal2007 p. 119"
@@ -1932,7 +1932,7 @@
             :pos :Verb,
             :rootClass :CiCaC}
     :terms [[:token] ;; schema
-(["tu-mifyéek tu-mifiyéek"]]
+            ["tu-mifyéek tu-mifiyéek"]]
     }
     {:label "beja_W-VPrefCiCiCAffAor-sibib"
     :note "Wedekind-etal2007 p. 109"
@@ -1964,7 +1964,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["íišbib ándi"]]
+            ["íišbib ándi"]]
     }
     {:label "beja_W-VPrefCiCiCAffImprtv-sibib"
     :note "Wedekind-etal2007 p. 109"
@@ -1991,7 +1991,7 @@
             :pos :Verb,
             :rootClass :CiCiC}
     :terms [[:token] ;; schema
-(["šibbáab"]]
+            ["šibbáab"]]
     }
     {:label "beja_W-VPrefCiCiCAffPast-sibib"
     :note "Wedekind-etal2007 p. 109"
@@ -2041,7 +2041,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["íišbib káadi"]]
+            ["íišbib káadi"]]
     }
     {:label "beja_W-VPrefCiCiCNegImprtv-sibib"
     :note "Wedekind-etal2007 p. 109"
@@ -2068,7 +2068,7 @@
             :pos :Verb,
             :rootClass :CiCiC}
     :terms [[:token] ;; schema
-(["baašabíib"]]
+            ["baašabíib"]]
     }
     {:label "beja_W-VPrefCiCiCNegPast-sibib"
     :note "Wedekind-etal2007 p. 109"
@@ -2116,7 +2116,7 @@
             :pos :Verb,
             :rootClass :CiCiC}
     :terms [[:token] ;; schema
-(["óo-šbúub"]]
+            ["óo-šbúub"]]
     }
     {:label "beja_W-VPrefCiCiCNomAct-sibib"
     :note "Wedekind-etal2007 p. 109"
@@ -2128,7 +2128,7 @@
             :pos :Verb,
             :rootClass :CiCiC}
     :terms [[:token] ;; schema
-(["óo-šbúub"]]
+            ["óo-šbúub"]]
     }
     {:label "beja_W-VPrefCiCiyAffAor-miriy"
     :note "Wedekind-etal2007 p. 111"
@@ -2160,7 +2160,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["ímaar ándi"]]
+            ["ímaar ándi"]]
     }
     {:label "beja_W-VPrefCiCiyAffImprtv-miriy"
     :note "Wedekind-etal2007 p. 111"
@@ -2187,7 +2187,7 @@
             :pos :Verb,
             :rootClass :CiCiy}
     :terms [[:token] ;; schema
-(["miriyáab"]]
+            ["miriyáab"]]
     }
     {:label "beja_W-VPrefCiCiyAffPast-miriy"
     :note "Wedekind-etal2007 p. 111"
@@ -2237,7 +2237,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["ímaar káadi"]]
+            ["ímaar káadi"]]
     }
     {:label "beja_W-VPrefCiCiyNegImprtv-miriy"
     :note "Wedekind-etal2007 p. 111"
@@ -2264,7 +2264,7 @@
             :pos :Verb,
             :rootClass :CiCiy}
     :terms [[:token] ;; schema
-(["bamáari"]]
+            ["bamáari"]]
     }
     {:label "beja_W-VPrefCiCiyNegPast-miriy"
     :note "Wedekind-etal2007 p. 111"
@@ -2312,7 +2312,7 @@
             :pos :Verb,
             :rootClass :CiCiy}
     :terms [[:token] ;; schema
-(["óo-mraay óo-mrúuy"]]
+            ["óo-mraay óo-mrúuy"]]
     }
     {:label "beja_W-VPrefCiCiyNomAct-miriy"
     :note "Wedekind-etal2007 p. 111"
@@ -2324,7 +2324,7 @@
             :pos :Verb,
             :rootClass :CiCiy}
     :terms [[:token] ;; schema
-(["óo-mraay óo-mrúuy"]]
+            ["óo-mraay óo-mrúuy"]]
     }
     {:label "beja_W-VPrefCiyAffAor-diy"
     :note "Wedekind-etal2007 p. 103"
@@ -2356,7 +2356,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["íyaad ándi"]]
+            ["íyaad ándi"]]
     }
     {:label "beja_W-VPrefCiyAffImprtv-diy"
     :note "Wedekind-etal2007 p. 103"
@@ -2383,7 +2383,7 @@
             :pos :Verb,
             :rootClass :Ciy}
     :terms [[:token] ;; schema
-(["diyáab"]]
+            ["diyáab"]]
     }
     {:label "beja_W-VPrefCiyAffPast-diy"
     :note "Wedekind-etal2007 p. 103"
@@ -2433,7 +2433,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["íyaad káadi"]]
+            ["íyaad káadi"]]
     }
     {:label "beja_W-VPrefCiyNegImprtv-diy"
     :note "Wedekind-etal2007 p. 103"
@@ -2460,7 +2460,7 @@
             :pos :Verb,
             :rootClass :Ciy}
     :terms [[:token] ;; schema
-(["báadí"]]
+            ["báadí"]]
     }
     {:label "beja_W-VPrefCiyNegPast-diy"
     :note "Wedekind-etal2007 p. 103"
@@ -2508,7 +2508,7 @@
             :pos :Verb,
             :rootClass :Ciy}
     :terms [[:token] ;; schema
-(["óo-myáad"]]
+            ["óo-myáad"]]
     }
     {:label "beja_W-VPrefCiyNomAct-diy"
     :note "Wedekind-etal2007 p. 103"
@@ -2520,7 +2520,7 @@
             :pos :Verb,
             :rootClass :Ciy}
     :terms [[:token] ;; schema
-(["óo-myáad"]]
+            ["óo-myáad"]]
     }
     {:label "beja_W-VPrefHaCiCAffAor-hariw"
     :note "Wedekind-etal2007 p. 113"
@@ -2552,7 +2552,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["ihíriw ándi"]]
+            ["ihíriw ándi"]]
     }
     {:label "beja_W-VPrefHaCiCAffImprtv-hariw"
     :note "Wedekind-etal2007 p. 113"
@@ -2579,7 +2579,7 @@
             :pos :Verb,
             :rootClass :HaCiC}
     :terms [[:token] ;; schema
-(["harwáab"]]
+            ["harwáab"]]
     }
     {:label "beja_W-VPrefHaCiCAffPast-hariw"
     :note "Wedekind-etal2007 p. 113"
@@ -2629,7 +2629,7 @@
             :tam :Future,
             :number :Singular}
     :terms [[:token] ;; schema
-(["ihíriw káadi"]]
+            ["ihíriw káadi"]]
     }
     {:label "beja_W-VPrefHaCiCNegImprtv-hariw"
     :note "Wedekind-etal2007 p. 113"
@@ -2656,7 +2656,7 @@
             :pos :Verb,
             :rootClass :HaCiC}
     :terms [[:token] ;; schema
-(["bahar’iw"]]
+            ["bahar’iw"]]
     }
     {:label "beja_W-VPrefHaCiCNegPast-hariw"
     :note "Wedekind-etal2007 p. 113"
@@ -2704,7 +2704,7 @@
             :pos :Verb,
             :rootClass :HaCiC}
     :terms [[:token] ;; schema
-(["w-harúuw"]]
+            ["w-harúuw"]]
     }
     {:label "beja_W-VPrefHaCiCNomAct-hariw"
     :note "Wedekind-etal2007 p. 113"
@@ -2716,7 +2716,7 @@
             :pos :Verb,
             :rootClass :HaCiC}
     :terms [[:token] ;; schema
-(["w-harúuw"]]
+            ["w-harúuw"]]
     }
     {:label "beja_W-VPrefNegCHiyParticiple"
     :note "Wedekind-etal2007 p. 106"
@@ -2729,7 +2729,7 @@
             :pos :Verb,
             :rootClass :CHiy}
     :terms [[:token] ;; schema
-(["baad’iiyay"]]
+            ["baad’iiyay"]]
     }
     {:label "beja_W-VPrefNegCaCParticiple"
     :note "Wedekind-etal2007 p. 115"
@@ -2742,7 +2742,7 @@
             :pos :Verb,
             :rootClass :CaC}
     :terms [[:token] ;; schema
-(["banáaway"]]
+            ["banáaway"]]
     }
     {:label "beja_W-VPrefNegCayParticiple"
     :note "Wedekind-etal2007 p. 117"
@@ -2755,7 +2755,7 @@
             :pos :Verb,
             :rootClass :Cay}
     :terms [[:token] ;; schema
-(["baabáay"]]
+            ["baabáay"]]
     }
     {:label "beja_W-VPrefNegCiCHParticiple"
     :note "Wedekind-etal2007 p. 121"
@@ -2768,7 +2768,7 @@
             :pos :Verb,
             :rootClass :CiCH}
     :terms [[:token] ;; schema
-(["báafar’a"]]
+            ["báafar’a"]]
     }
     {:label "beja_W-VPrefNegCiCParticiple"
     :note "Wedekind-etal2007 p. 107"
@@ -2781,7 +2781,7 @@
             :pos :Verb,
             :rootClass :CiC}
     :terms [[:token] ;; schema
-(["báaríib"]]
+            ["báaríib"]]
     }
     {:label "beja_W-VPrefNegCiCaCParticiple"
     :note "Wedekind-etal2007 p. 119"
@@ -2794,7 +2794,7 @@
             :pos :Verb,
             :rootClass :CiCaC}
     :terms [[:token] ;; schema
-(["báafiyáak"]]
+            ["báafiyáak"]]
     }
     {:label "beja_W-VPrefNegCiCaCPast-fiyak"
     :note "Wedekind-etal2007 p. 119"
@@ -2825,7 +2825,7 @@
             :pos :Verb,
             :rootClass :CiCiC}
     :terms [[:token] ;; schema
-(["baašabíib"]]
+            ["baašabíib"]]
     }
     {:label "beja_W-VPrefNegCiCiyParticiple"
     :note "Wedekind-etal2007 p. 111"
@@ -2838,7 +2838,7 @@
             :pos :Verb,
             :rootClass :CiCiy}
     :terms [[:token] ;; schema
-(["bamáari"]]
+            ["bamáari"]]
     }
     {:label "beja_W-VPrefNegCiyParticiple"
     :note "Wedekind-etal2007 p. 103"
@@ -2851,7 +2851,7 @@
             :pos :Verb,
             :rootClass :Ciy}
     :terms [[:token] ;; schema
-(["báadí"]]
+            ["báadí"]]
     }
     {:label "beja_W-VPrefNegHaCiCParticiple"
     :note "Wedekind-etal2007 p. 113"
@@ -2864,7 +2864,7 @@
             :pos :Verb,
             :rootClass :HaCiC}
     :terms [[:token] ;; schema
-(["bahar’iw"]]
+            ["bahar’iw"]]
     }
     {:label "beja_W-VPrefPast"
     :note "Wedekind-etal2007 Table #29. There are two paradigms of say,-ni- and –di-. Presently,for most Beja dialects,the second paradigm is the most common one,while the other one has only survived with certain speakers and in certain forms.(p.97)"
@@ -3197,23 +3197,23 @@
             :pos :Verb,
             :tam :Future,
             :pdgmType :Intention}
-    :terms [[:lexeme :token-note :number :token] ;; schema
-            [:diy "shall do" :Singular "náat íid’a ándi"]
-            [:diy "shall do" :Plural "náat níid’a néeyad"]
-            [:diy "shall say" :Singular "náat íyaad ándi"]
-            [:diy "shall say" :Plural "náat níyaad néeyad"]
-            [:diy "want to do" :Singular "náat d’íya dáaya ándi"]
-            [:diy "want to do" :Plural "náat d’íya néeyad"]
-            [:diy "want to say" :Singular "náat díya ándi"]
-            [:diy "want to say" :Plural "náat díya néeyad"]
-            [:gwa "shall drink" :Singular "náat gw’í ándi"]
-            [:gwa "shall drink" :Plural "náat gw’áni neeyad"]
-            [:gwa "want to drink" :Singular "náat gw’á ándi"]
-            [:gwa "want to drink" :Plural "náat gw’á néeyad"]
-            [:tam "shall eat" :Singular "náat támi ándi"]
-            [:tam "shall eat " :Plural "náat támni néeyad"]
-            [:tam "want to eat" :Singular "náat táma ándi"]
-            [:tam "want to eat" :Plural "náat táma néeyad"]]
+    :terms [[:lexeme :number :token :token-note] ;; schema
+            [:diy :Singular "náat íyaad ándi" "shall say"]
+            [:diy :Singular "náat íid’a ándi" "shall do"]
+            [:diy :Singular "náat d’íya dáaya ándi" "want to do"]
+            [:diy :Singular "náat díya ándi" "want to say"]
+            [:diy :Plural "náat níid’a néeyad" "shall do"]
+            [:diy :Plural "náat níyaad néeyad" "shall say"]
+            [:diy :Plural "náat d’íya néeyad" "want to do"]
+            [:diy :Plural "náat díya néeyad" "want to say"]
+            [:gwa :Singular "náat gw’á ándi" "want to drink"]
+            [:gwa :Singular "náat gw’í ándi" "shall drink"]
+            [:gwa :Plural "náat gw’á néeyad" "want to drink"]
+            [:gwa :Plural "náat gw’áni neeyad" "shall drink"]
+            [:tam :Singular "náat támi ándi" "shall eat"]
+            [:tam :Singular "náat táma ándi" "want to eat"]
+            [:tam :Plural "náat táma néeyad" "want to eat"]
+            [:tam :Plural "náat támni néeyad" "shall eat "]]
     }
     {:label "beja_W-VSuffImprtvAff-yak"
     :note "Wedekind-etal2007 p.90"
@@ -3428,7 +3428,7 @@
             :pos :Verb,
             :tam :Participle}
     :terms [[:token] ;; schema
-(["yákaab"]]
+            ["yákaab"]]
     }
     {:label "beja_W-VSuffPartNeg-yak"
     :note "Wedekind-etal2007 p.90"
@@ -3438,7 +3438,7 @@
             :pos :Verb,
             :tam :Participle}
     :terms [[:token] ;; schema
-(["baayákay"]]
+            ["baayákay"]]
     }
     {:label "beja_W-VSuffPastAff-yak"
     :note "Wedekind-etal2007 p.90"
@@ -3564,13 +3564,13 @@
             :person :Person1,
             :pos :Verb,
             :pdgmType :Overview}
-    :terms [[:conjClass :tam :token-note-aux :number :token] ;; schema
-            [:Prefix :Future "néeyad" :Plural "níyaad    néeyad"]
-            [:Prefix :Future "ándi" :Singular "íyaad    ándi"]
-            [:Prefix :Past "_NULL" :Singular "ádi    _NULL"]
-            [:Prefix :Past "_NULL" :Plural "nídi   _NULL"]
-            [:Prefix :Present "_NULL" :Singular "ándi    _NULL"]
-            [:Prefix :Present "_NULL" :Plural "néeyad   _NULL"]]
+    :terms [[:conjClass :tam :number :token :token-note-aux] ;; schema
+            [:Prefix :Future :Singular "íyaad    ándi" "ándi"]
+            [:Prefix :Future :Plural "níyaad    néeyad" "néeyad"]
+            [:Prefix :Past :Singular "ádi    _NULL" "_NULL"]
+            [:Prefix :Past :Plural "nídi   _NULL" "_NULL"]
+            [:Prefix :Present :Singular "ándi    _NULL" "_NULL"]
+            [:Prefix :Present :Plural "néeyad   _NULL" "_NULL"]]
     }
     {:label "beja_W-VTenseAspOverview-yak"
     :note "Wedekind-etal2007 Table #32"
@@ -3578,13 +3578,13 @@
             :person :Person1,
             :pos :Verb,
             :pdgmType :Overview}
-    :terms [[:conjClass :tam :token-note-aux :number :token] ;; schema
-            [:Suffix :Future "néeyad" :Plural "yákni    néeyad"]
-            [:Suffix :Future "ándi" :Singular "yáki    ándi"]
-            [:Suffix :Past "_NULL" :Singular "yakán    _NULL"]
-            [:Suffix :Past "_NULL" :Plural "yákna   _NULL"]
-            [:Suffix :Present "_NULL" :Singular "yakáni    _NULL"]
-            [:Suffix :Present "_NULL" :Plural "yáknay   _NULL"]]
+    :terms [[:conjClass :tam :number :token :token-note-aux] ;; schema
+            [:Suffix :Future :Singular "yáki    ándi" "ándi"]
+            [:Suffix :Future :Plural "yákni    néeyad" "néeyad"]
+            [:Suffix :Past :Singular "yakán    _NULL" "_NULL"]
+            [:Suffix :Past :Plural "yákna   _NULL" "_NULL"]
+            [:Suffix :Present :Singular "yakáni    _NULL" "_NULL"]
+            [:Suffix :Present :Plural "yáknay   _NULL" "_NULL"]]
     }
 ]
 :muterms [
