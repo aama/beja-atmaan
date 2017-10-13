@@ -6,34 +6,34 @@
 :datasourceNotes "Wedekind uses the term 'Past Continuous' for what is here termed ':Aorist'"
 :geodemoURL "http://www.ethnologue.com/language/bej"
 :geodemoTXT "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan, Eritrea, and Egypt by more than a million individuals. The Atmaan variety is spoken in Eastern Sudan, and is described in Wedekind-etal2007."
-:schemata{:strength [:weak],
-          :gender [:Common :Fem :Masc],
-          :nonFiniteForm [:NominalAction :Participle],
-          :headPosition [:HeadFollow :HeadPrecede],
-          :stemClass [:HFin :HamzFin :HamzInitVFin :VFin1 :VFin2],
-          :numObj [:O_Plural :O_Singular],
-          :formFrequency [:Frequent :Rare],
-          :rootClass [:CHiy :CaC :Cay :CiC :CiCH :CiCaC :CiCiC :CiCiy :Ciy :HaCiC :Invar],
-          :polarity [:Affirmative :Negative],
-          :case [:Object :Subject],
-          :conjClass [:Irregular :Prefix :Suffix],
-          :caseHead [:H_Object :H_Subject],
-          :pos [:Pronoun :Verb],
-          :person [:Person1 :Person2 :Person3],
-          :numHead [:H_Plural :H_Singular],
-          :genObj [:O_Common :O_Fem :O_Masc],
-          :pdgmType [:Overview_NegAux :NonFin_NomSuffixClass :Overview_Mood :Partial_PrefVerbImperative :Overview_IntensiveAction :Overview_ObjSuffwVerbNeg :Finite :Overview_ObjSuffwVerb :NonFin_NomForm :NA :Overview_SuffPastPres :Affix_RelSuff :NonFin_Participle :Affix_SubjPref :Overview_NominalizationPatterns :Overview_AuxPut :Overview_Aux :Overview_Interrogation :Partial_Future :Overview_TenseAsp :Partial_ImperativeWeak :Overview_FutureIntention :Overview_AuxTake :Partial_Become]
-          :morphClass [:Affix_RelSuff :Affix_SubjPref :Finite :NonFin_NomForm :NonFin_NomSuffixClass :NonFin_Participle :Overview_Aux :Overview_AuxPut :Overview_AuxTake :Overview_FutureIntention :Partial_ImperativeWeak :Overview_IntensiveAction :Overview_Interrogation :Overview_Mood :Overview_NegAux :Overview_NominalizationPatterns :Overview_ObjSuffwVerbNeg :Overview_ObjSuffwVerb_rih :Partial_PrefVerbImperative :Overview_SuffPastPres :Overview_TenseAsp :Partial_Become :Partial_Future],
-          :genHead [:H_Fem :H_Masc],
-          :persObj [:O_Person1 :O_Person2 :O_Person3],
-          :proClass [:Independent :IndependentPersonal :ObjSuff :ObjSuffwVerb :PersSuff :PossSuff :IndependentPossessive],
-          :derivedStemAug [:Repetitive :Simple],
-          :tam [:Aorist :Future :Imperative :Jussive :Participle :Past :PastAlt :PastPerfect :Present :PresentShort],
-          :clauseType [:Relative],
-          :number [:Plural :Singular]}
+ :schemata {:case [:Object  :Subject],
+            :caseHead [:H_Object :H_Subject],
+            :clauseType [:Relative],
+            :conjClass [:Irregular :Prefix :Suffix],
+            :derivedStemAug [:Repetitive :Simple],
+            :formFrequency [:Frequent :Rare],
+            :genHead [:H_Fem :H_Masc],
+            :genObj [:O_Common :O_Fem :O_Masc],
+            :gender [:Common :Fem :Masc],
+            :headPosition [:HeadFollow :HeadPrecede],
+            :nonFiniteForm [:NominalAction :Participle],
+            :numHead [:H_Plural :H_Singular],
+            :numObj [:O_Plural :O_Singular :Plural],
+            :number [:Plural :Singular],
+            :persObj [:O_Person1 :O_Person2 :O_Person3],
+            :person [:Person1 :Person2 :Person3],
+            :polarity [:Affirmative :Negative :_NA],
+            :pos [:Pronoun :Verb],
+            :proClass [:IndependentPersonal :IndependentPossessive :ObjSuff :ObjSuffwVerb :PersSuff :PossSuff],
+            :rootClass [:CHiy :CaC :Cay :CiC :CiCH :CiCaC :CiCiC :CiCiy :Ciy :HaCiC :Invar],
+            :stemClass [:HFin :HamzFin :HamzInitVFin :VFin1 :VFin2],
+            :strength [:weak],
+            :tam [:Aorist :Future :Imperative :Jussive :Past :PastAlt :PastPerfect :Present :PresentShort]
+            :pdgmType [:Affix_RelSuff :Affix_SubjPref :Finite :NA :NonFin_NomForm :NonFin_NomSuffixClass :NonFin_Participle :Overview_Aux :Overview_AuxPut :Overview_AuxTake :Overview_FutureIntention :Overview_IntensiveAction :Overview_Interrogation :Overview_Mood :Overview_NegAux :Overview_NominalizationPatterns :Overview_ObjSuffwVerb :Overview_ObjSuffwVerbNeg :Overview_SuffPastPres :Overview_TenseAsp :Partial_Become :Partial_Future :Partial_ImperativeWeak :Partial_PrefVerbImperative :PRO]}
 :pclass {:pngClass [:person :number :gender :genHead :genObj :numHead :numObj :persObj],
           :synsemClass [:case :caseHead :clauseType :derivedStem :derivedStemAug :headPosition :nonFiniteForm :polarity :pos :proClass :tam],
           :inflClass [:conjClass :rootClass :stemClass :strength],
+         :pdgmClass [:pdgmType]
           :otherClass []}
 :morphemes{:PRO {:gloss "Pronoun", :pos :Pronoun},
            :REL_SUFF {:gloss "Relative Suffixes"},
@@ -124,8 +124,7 @@
     :pdgmType :NonFin_NomForm
     :common {:conjClass :Prefix,
              :gender :Common,
-             :morphClass :NonFin_NomForm,
-             :nonFiniteForm :Nominal_Action,
+             :nonFiniteForm :NominalAction,
              :pos :Verb}
     :terms [[:rootClass :lexeme :token],
             [:HaCiC :hariw "w-harúuw"],
@@ -143,7 +142,7 @@
     :note "Wedekind-etal2007 p. 106, etc."
     :pdgmType :NonFin_Participle
     :common {:gender :Masc,
-             :morphClass :NonFin_Participle,
+             
              :nonFiniteForm :Participle,
              :pos :Verb}
     :terms [[:conjClass :lexeme :polarity :rootClass :token],
@@ -153,7 +152,7 @@
             [:Prefix :fir :Affirmative :CiCH "fir’áab"],
             [:Prefix :rib :Affirmative :CiC "ribáab"],
             [:Prefix :fiyak :Affirmative :CiCaC "fayáak"],
-            [:Prefix :sibib :CiCiC "šibbáab"],
+            [:Prefix :sibib :Affirmative :CiCiC "šibbáab"],
             [:Prefix :miriy :Affirmative :CiCiy "miriyáab"],
             [:Prefix :diy :Affirmative :Ciy "diyáab"],
             [:Prefix :diy :Negative :Ciy "báadí"],
@@ -180,7 +179,7 @@
     :common {:conjClass :Suffix,
              :lexeme :yak,
              :pos :Verb,
-             :morphClass :NonFin_NomSuffixClass}
+             }
     :terms [[:nonFiniteForm :polarity :token],
             [:NominalAction :_NA "u-yákt"],
             [:Participle :Affirmative "yákaab"],
@@ -192,7 +191,6 @@
     :common {:conjClass :Irregular,
              :lexeme :kay,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :tam :Future}
     :terms [[:number :person :gender :token],
@@ -234,7 +232,7 @@
     {:label "beja_W-VAorRepetitive"
     :note "Wedekind-etal2007 p. 156"
     :pdgmType :Overview_IntensiveAction
-    :common {:morphClass :Overview_IntensiveAction,
+    :common {
              :number :Singular,
              :person :Person1,
              :pos :Verb,
@@ -256,7 +254,7 @@
     {:label "beja_W-VAuxOverview"
     :note "Wedekind-etal2007 Table #33"
     :pdgmType :Overview_Aux
-    :common {:morphClass :Overview_Aux,
+    :common {
              :pos :Verb}
     :terms [[:lexeme :token :token-note-auxGloss],
             [:aha "háya" "\"to do at once\", >take"],
@@ -274,7 +272,7 @@
              :polarity :Affirmative,
              :rootClass :CiCiC,
              :pos :Verb,
-             :morphClass :Overview_AuxPut}
+             }
     :terms [[:tam :number :person :gender :token],
             [:Future :Singular :Person1 :Common "áat dílbi ád’a íid’a ándi"],
             [:Future :Singular :Person2 :Masc "áat dílbi íid’a índiya"],
@@ -307,7 +305,7 @@
     :common {:lexeme :dilib,
              :rootClass :CiCiC,
              :pos :Verb,
-             :morphClass :Overview_AuxTake}
+             }
     :terms [[:polarity :tam :number :person :gender :token],
             [:Affirmative :Future :Singular :Person2 :Masc "dílbi áyaay tindíya?"],
             [:Affirmative :Future :Singular :Person2 :Fem "dílbi áyaay tíndíyi?"],
@@ -372,7 +370,7 @@
              :person :Person2,
              :pos :Verb,
              :tam :Imperative,
-             :morphClass :Overview_Mood}
+             }
     :terms [[:polarity :number :gender :token],
             [:Affirmative :Singular :Masc "hindéeh tamáan!"],
             [:Affirmative :Singular :Masc "diyáheeb!"],
@@ -390,7 +388,7 @@
     :common {:conjClass :Irregular,
              :lexeme :bariy,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Aorist}
     :terms [[:number :person :gender :token],
@@ -409,7 +407,7 @@
     :common {:conjClass :Irregular,
              :lexeme :fay,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Aorist}
     :terms [[:number :person :gender :token],
@@ -428,7 +426,7 @@
     :common {:conjClass :Irregular,
              :lexeme :hiy,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Aorist}
     :terms [[:number :person :gender :token],
@@ -447,7 +445,7 @@
     :common {:conjClass :Irregular,
              :lexeme :bariy,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Past}
     :terms [[:number :person :gender :token],
@@ -466,7 +464,7 @@
     :common {:conjClass :Irregular,
              :lexeme :fay,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Past}
     :terms [[:number :person :gender :token],
@@ -485,7 +483,7 @@
     :common {:conjClass :Irregular,
              :lexeme :hiy,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Past}
     :terms [[:number :person :gender :token],
@@ -504,7 +502,7 @@
     :common {:conjClass :Irregular,
              :lexeme :kay,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Past}
     :terms [[:number :person :gender :token],
@@ -523,7 +521,7 @@
     :common {:conjClass :Irregular,
              :lexeme :kay,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Present}
     :terms [[:number :person :gender :token],
@@ -544,7 +542,7 @@
              :polarity :Affirmative,
              :pos :Verb,
              :tam :Jussive,
-             :morphClass :Finite}
+             }
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "diyát(ay)!"],
             [:Singular :Person3 :Masc "bá’iyáad(ay)"],
@@ -560,7 +558,7 @@
              :polarity :Affirmative,
              :pos :Verb,
              :tam :Jussive,
-             :morphClass :Finite}
+             }
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "šibbát(ay)!"],
             [:Singular :Person3 :Masc "bá’iišbíb(ay)!"],
@@ -575,7 +573,7 @@
              :polarity :Affirmative,
              :pos :Verb,
              :tam :Jussive,
-             :morphClass :Finite}
+             }
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "ribát(ay)!"],
             [:Singular :Person3 :Masc "bá’iiríb(ay)!"],
@@ -590,7 +588,7 @@
              :polarity :Affirmative,
              :pos :Verb,
              :tam :Jussive,
-             :morphClass :Finite}
+             }
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "d’iyát(ay)!"],
             [:Singular :Person3 :Masc "bá’id’áy(ay)!"],
@@ -601,7 +599,7 @@
     :note "Wedekind-etal2007 p. 154 (cf. also 152) (iikta become frm aka,kaya ?) 'I will not become a teacher'..."
     :pdgmType :Finite
     :common {:conjClass :Irregular,
-             :morphClass :Finite,
+             
              :lexeme :kay,
              :polarity :Negative,
              :pos :Verb,
@@ -621,7 +619,7 @@
     :pdgmType :Overview_NegAux
     :common {:polarity :Negative,
              :pos :Verb,
-             :morphClass :Overview_NegAux}
+             }
     :terms [[:token :token-note],
             ["oosdík usóotiyu iríb" "He did not tell the truth"],
             ["siniyáayu kíiki" "He does not wait for me"],
@@ -640,7 +638,7 @@
              :tam :Present,
              :polarity :Negative,
              :pos :Verb,
-             :morphClass :Finite}
+             }
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "haráayr’iib káaki"],
             [:Singular :Person2 :Masc "haráayr’iib kíttaa"],
@@ -656,7 +654,7 @@
     :pdgmType :Overview_ObjSuffwVerb
     :common {:polarity :Negative,
              :pos :Verb,
-             :morphClass :Overview_ObjSuffwVerb}
+             }
     :terms [[:genObj :lexeme :numObj :persObj :number :person :gender :token :token-note],
             [:O_Common :kan :O_Plural :O_Person2 :Plural :Person1 :Common "láa láa kínkanhookna" "no - I do not know you"],
             [:O_Common :kan :O_Plural :O_Person2 :Plural :Person1 :Common "awóoh niktéenhookna" "yes - we know you"],
@@ -694,7 +692,7 @@
     {:label "beja_W-VNominalizationPatterns"
     :note "Wedekind-etal2007 Table #34-35"
     :pdgmType :Overview_NominalizationPatterns
-    :common {:morphClass :Overview_NominalizationPatterns,
+    :common {
              :pos :Verb}
     :terms [[:conjClass :lexeme :token :token-note],
             [:Prefix :bis "bis-a → oo-baas" "bury - goes_to the burial"],
@@ -709,7 +707,7 @@
     :common {:conjClass :Prefix,
              :lexeme :dam,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Future}
     :terms [[:number :person :gender :token],
@@ -728,7 +726,7 @@
     :common {:conjClass :Prefix,
              :lexeme :dHiy,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CHiy,
              :tam :Aorist}
@@ -749,7 +747,7 @@
              :lexeme :dHiy,
              :person :Person2,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CHiy,
              :tam :Imperative}
@@ -764,7 +762,7 @@
     :common {:conjClass :Prefix,
              :lexeme :dHiy,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CHiy,
              :tam :Past}
@@ -784,7 +782,7 @@
     :common {:conjClass :Prefix,
              :lexeme :dHiy,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CHiy,
              :tam :Present}
@@ -805,7 +803,7 @@
              :lexeme :dHiy,
              :person :Person2,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CHiy,
              :tam :Imperative}
@@ -820,7 +818,7 @@
     :common {:conjClass :Prefix,
              :lexeme :dHiy,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CHiy,
              :tam :Past}
@@ -840,7 +838,7 @@
     :common {:conjClass :Prefix,
              :lexeme :dHiy,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CHiy,
              :tam :Present}
@@ -860,7 +858,7 @@
     :common {:conjClass :Prefix,
              :lexeme :naw,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CaC,
              :tam :Aorist}
@@ -881,7 +879,7 @@
              :lexeme :naw,
              :person :Person2,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CaC,
              :tam :Imperative}
@@ -896,7 +894,7 @@
     :common {:conjClass :Prefix,
              :lexeme :naw,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CaC,
              :tam :Past}
@@ -916,7 +914,7 @@
     :common {:conjClass :Prefix,
              :lexeme :naw,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CaC,
              :tam :Present}
@@ -937,7 +935,7 @@
              :lexeme :naw,
              :person :Person2,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CaC,
              :tam :Imperative}
@@ -952,7 +950,7 @@
     :common {:conjClass :Prefix,
              :lexeme :naw,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CaC,
              :tam :Past}
@@ -972,7 +970,7 @@
     :common {:conjClass :Prefix,
              :lexeme :naw,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CaC,
              :tam :Present}
@@ -992,7 +990,7 @@
     :common {:conjClass :Prefix,
              :lexeme :bay,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Cay,
              :tam :Aorist}
@@ -1013,7 +1011,7 @@
              :lexeme :bay,
              :person :Person2,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Cay,
              :tam :Imperative}
@@ -1028,7 +1026,7 @@
     :common {:conjClass :Prefix,
              :lexeme :bay,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Cay,
              :tam :Past}
@@ -1048,7 +1046,7 @@
     :common {:conjClass :Prefix,
              :lexeme :bay,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Cay,
              :tam :Present}
@@ -1069,7 +1067,7 @@
              :lexeme :bay,
              :person :Person2,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Cay,
              :tam :Imperative}
@@ -1084,7 +1082,7 @@
     :common {:conjClass :Prefix,
              :lexeme :bay,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Cay,
              :tam :Past}
@@ -1104,7 +1102,7 @@
     :common {:conjClass :Prefix,
              :lexeme :bay,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Cay,
              :tam :Present}
@@ -1124,7 +1122,7 @@
     :common {:conjClass :Prefix,
              :lexeme :rib,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiC,
              :tam :Aorist}
@@ -1145,7 +1143,7 @@
              :lexeme :rib,
              :person :Person2,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiC,
              :tam :Imperative}
@@ -1160,7 +1158,7 @@
     :common {:conjClass :Prefix,
              :lexeme :rib,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiC,
              :tam :Past}
@@ -1180,7 +1178,7 @@
     :common {:conjClass :Prefix,
              :lexeme :rib,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiC,
              :tam :Present}
@@ -1200,7 +1198,7 @@
     :common {:conjClass :Prefix,
              :lexeme :fir,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCH,
              :tam :Aorist}
@@ -1221,7 +1219,7 @@
              :lexeme :fir,
              :person :Person2,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCH,
              :tam :Imperative}
@@ -1236,7 +1234,7 @@
     :common {:conjClass :Prefix,
              :lexeme :fir,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCH,
              :tam :Past}
@@ -1256,7 +1254,7 @@
     :common {:conjClass :Prefix,
              :lexeme :fir,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCH,
              :tam :Present}
@@ -1277,7 +1275,7 @@
              :lexeme :fir,
              :person :Person2,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCH,
              :tam :Imperative}
@@ -1292,7 +1290,7 @@
     :common {:conjClass :Prefix,
              :lexeme :fir,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCH,
              :tam :Past}
@@ -1312,7 +1310,7 @@
     :common {:conjClass :Prefix,
              :lexeme :fir,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCH,
              :tam :Present}
@@ -1333,7 +1331,7 @@
              :lexeme :rib,
              :person :Person2,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiC,
              :tam :Imperative}
@@ -1348,7 +1346,7 @@
     :common {:conjClass :Prefix,
              :lexeme :rib,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiC,
              :tam :Past}
@@ -1368,7 +1366,7 @@
     :common {:conjClass :Prefix,
              :lexeme :rib,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiC,
              :tam :Present}
@@ -1388,7 +1386,7 @@
     :common {:conjClass :Prefix,
              :lexeme :fiyak,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCaC,
              :tam :Aorist}
@@ -1409,7 +1407,7 @@
              :lexeme :fiyak,
              :person :Person2,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCaC,
              :tam :Imperative}
@@ -1424,7 +1422,7 @@
     :common {:conjClass :Prefix,
              :lexeme :fiyak,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCaC,
              :tam :Past}
@@ -1444,7 +1442,7 @@
     :common {:conjClass :Prefix,
              :lexeme :fiyak,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCaC,
              :tam :Present}
@@ -1464,7 +1462,7 @@
     :common {:conjClass :Prefix,
              :lexeme :fiyak,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCaC,
              :tam :Past}
@@ -1485,7 +1483,7 @@
              :lexeme :fiyak,
              :person :Person2,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCaC,
              :tam :Imperative}
@@ -1500,7 +1498,7 @@
     :common {:conjClass :Prefix,
              :lexeme :fiyak,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCaC,
              :tam :Present}
@@ -1520,7 +1518,7 @@
     :common {:conjClass :Prefix,
              :lexeme :sibib,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCiC,
              :tam :Aorist}
@@ -1541,7 +1539,7 @@
              :lexeme :sibib,
              :person :Person2,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCiC,
              :tam :Imperative}
@@ -1556,7 +1554,7 @@
     :common {:conjClass :Prefix,
              :lexeme :sibib,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCiC,
              :tam :Past}
@@ -1576,7 +1574,7 @@
     :common {:conjClass :Prefix,
              :lexeme :sibib,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCiC,
              :tam :Present}
@@ -1597,7 +1595,7 @@
              :lexeme :sibib,
              :person :Person2,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCiC,
              :tam :Imperative}
@@ -1612,7 +1610,7 @@
     :common {:conjClass :Prefix,
              :lexeme :sibib,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCiC,
              :tam :Past}
@@ -1632,7 +1630,7 @@
     :common {:conjClass :Prefix,
              :lexeme :sibib,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCiC,
              :tam :Present}
@@ -1652,7 +1650,7 @@
     :common {:conjClass :Prefix,
              :lexeme :miriy,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCiy,
              :tam :Aorist}
@@ -1673,7 +1671,7 @@
              :lexeme :miriy,
              :person :Person2,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCiy,
              :tam :Imperative}
@@ -1688,7 +1686,7 @@
     :common {:conjClass :Prefix,
              :lexeme :miriy,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCiy,
              :tam :Past}
@@ -1708,7 +1706,7 @@
     :common {:conjClass :Prefix,
              :lexeme :miriy,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCiy,
              :tam :Present}
@@ -1729,7 +1727,7 @@
              :lexeme :miriy,
              :person :Person2,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCiy,
              :tam :Imperative}
@@ -1744,7 +1742,7 @@
     :common {:conjClass :Prefix,
              :lexeme :miriy,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCiy,
              :tam :Past}
@@ -1764,7 +1762,7 @@
     :common {:conjClass :Prefix,
              :lexeme :miriy,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCiy,
              :tam :Present}
@@ -1784,7 +1782,7 @@
     :common {:conjClass :Prefix,
              :lexeme :diy,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Ciy,
              :tam :Aorist}
@@ -1805,7 +1803,7 @@
              :lexeme :diy,
              :person :Person2,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Ciy,
              :tam :Imperative}
@@ -1820,7 +1818,7 @@
     :common {:conjClass :Prefix,
              :lexeme :diy,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Ciy,
              :tam :Past}
@@ -1840,7 +1838,7 @@
     :common {:conjClass :Prefix,
              :lexeme :diy,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Ciy,
              :tam :Present}
@@ -1861,7 +1859,7 @@
              :lexeme :diy,
              :person :Person2,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Ciy,
              :tam :Imperative}
@@ -1876,7 +1874,7 @@
     :common {:conjClass :Prefix,
              :lexeme :diy,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Ciy,
              :tam :Past}
@@ -1896,7 +1894,7 @@
     :common {:conjClass :Prefix,
              :lexeme :diy,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Ciy,
              :tam :Present}
@@ -1916,7 +1914,7 @@
     :common {:conjClass :Prefix,
              :lexeme :hariw,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :HaCiC,
              :tam :Aorist}
@@ -1937,7 +1935,7 @@
              :lexeme :hariw,
              :person :Person2,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :HaCiC,
              :tam :Imperative}
@@ -1952,7 +1950,7 @@
     :common {:conjClass :Prefix,
              :lexeme :hariw,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :HaCiC,
              :tam :Past}
@@ -1972,7 +1970,7 @@
     :common {:conjClass :Prefix,
              :lexeme :hariw,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :HaCiC,
              :tam :Present}
@@ -1993,7 +1991,7 @@
              :lexeme :hariw,
              :person :Person2,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :HaCiC,
              :tam :Imperative}
@@ -2008,7 +2006,7 @@
     :common {:conjClass :Prefix,
              :lexeme :hariw,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :HaCiC,
              :tam :Past}
@@ -2028,7 +2026,7 @@
     :common {:conjClass :Prefix,
              :lexeme :hariw,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :HaCiC,
              :tam :Present}
@@ -2048,7 +2046,7 @@
     :common {:conjClass :Prefix,
              :lexeme :fiyak,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :CiCaC,
              :tam :Past}
@@ -2068,7 +2066,7 @@
     :common {:conjClass :Prefix,
              :lexeme :diy,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :rootClass :Ciy,
              :tam :PastAlt}
@@ -2086,7 +2084,7 @@
     :note "Wedekind-etal2007 p. 124"
     :pdgmType :Partial_PrefVerbImperative
     :common {:conjClass :Prefix,
-             :morphClass :Partial_PrefVerbImperative,
+             
              :person :Person2,
              :pos :Verb,
              :tam :Imperative}
@@ -2168,7 +2166,7 @@
              :pos :Verb,
              :strength :weak,
              :tam :Future,
-             :morphClass :Partial_Become}
+             }
     :terms [[:person :gender :token],
             [:Person1 :Common "áni gw’í ándi"],
             [:Person2 :Masc "barúuk gw’í tíndiya"],
@@ -2180,7 +2178,7 @@
     :common {:conjClass :Suffix,
              :lexeme :rih,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :stemClass :HFin,
              :tam :Past}
@@ -2200,7 +2198,7 @@
     :common {:conjClass :Suffix,
              :lexeme :rih,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :stemClass :HFin,
              :tam :Present}
@@ -2220,7 +2218,7 @@
     :common {:conjClass :Suffix,
              :lexeme :gwa,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :stemClass :HamzFin,
              :tam :Past}
@@ -2240,7 +2238,7 @@
     :common {:conjClass :Suffix,
              :lexeme :gwa,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :stemClass :HamzFin,
              :tam :Present}
@@ -2260,7 +2258,7 @@
     :common {:conjClass :Suffix,
              :lexeme :ee,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :stemClass :HamzInitVFin,
              :tam :Past}
@@ -2280,7 +2278,7 @@
     :common {:conjClass :Suffix,
              :lexeme :ee,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :stemClass :HamzInitVFin,
              :tam :Present}
@@ -2300,7 +2298,7 @@
     :common {:conjClass :Suffix,
              :lexeme :tam,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Past}
     :terms [[:number :person :gender :token],
@@ -2319,7 +2317,7 @@
     :common {:conjClass :Suffix,
              :lexeme :tam,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Present}
     :terms [[:number :person :gender :token],
@@ -2338,7 +2336,7 @@
     :common {:conjClass :Suffix,
              :lexeme :agrii,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :stemClass :VFin1,
              :tam :Present}
@@ -2358,7 +2356,7 @@
     :common {:conjClass :Suffix,
              :lexeme :aree,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :stemClass :VFin2,
              :tam :Present}
@@ -2379,7 +2377,7 @@
              :lexeme :gwa,
              :pos :Verb,
              :tam :Aorist,
-             :morphClass :Overview_Interrogation}
+             }
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "náan gw’í?"],
             [:Singular :Person2 :Masc "náan gw’átiya?"],
@@ -2393,7 +2391,6 @@
     :note "Wedekind-etal2007 p. 154. V+a SAY = I want to V;V+1 SAY = I shall V."
     :pdgmType :Overview_FutureIntention
     :common {:conjClass :Suffix,
-             :morphClass :Overview_FutureIntention,
              :person :Person1,
              :pos :Verb,
              :tam :Future}
@@ -2421,7 +2418,7 @@
     :common {:conjClass :Suffix,
              :lexeme :yak,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Imperative}
     :terms [[:number :person :gender :token],
@@ -2436,7 +2433,7 @@
              :person :Person2,
              :pos :Verb,
              :tam :Imperative,
-             :morphClass :Partial_ImperativeWeak}
+             }
     :terms [[:lexeme :number :gender :token],
             [:adgir :Singular :Masc "adgíraa"],
             [:adgir :Singular :Fem "adgírii"],
@@ -2472,7 +2469,7 @@
     :common {:conjClass :Suffix,
              :lexeme :raat,
              :person :Person2,
-             :morphClass :Finite,
+             
              :polarity :Affirmative,
              :pos :Verb,
              :tam :Imperative}
@@ -2486,7 +2483,7 @@
     :pdgmType :Finite
     :common {:conjClass :Suffix,
              :lexeme :raat,
-             :morphClass :Finite,
+             
              :polarity :Affirmative,
              :pos :Verb,
              :tam :Jussive}
@@ -2505,7 +2502,7 @@
     :pdgmType :Finite
     :common {:conjClass :Suffix,
              :lexeme :gwa,
-             :morphClass :Finite,
+             
              :polarity :Affirmative,
              :pos :Verb,
              :tam :Jussive}
@@ -2525,7 +2522,7 @@
     :common {:conjClass :Suffix,
              :lexeme :gwa,
              :person :Person2,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Imperative}
     :terms [[:number :gender :token],
@@ -2539,7 +2536,7 @@
     :common {:conjClass :Suffix,
              :lexeme :yak,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Imperative}
     :terms [[:number :person :gender :token],
@@ -2553,7 +2550,7 @@
     :common {:conjClass :Suffix,
              :lexeme :ee,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :stemClass :HamzInitVFin,
              :tam :Present}
@@ -2573,7 +2570,7 @@
     :common {:conjClass :Suffix,
              :lexeme :tam,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Present}
     :terms [[:number :person :gender :token],
@@ -2592,7 +2589,7 @@
     :common {:conjClass :Suffix,
              :lexeme :agrii,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :stemClass :VFin1,
              :tam :Present}
@@ -2612,7 +2609,7 @@
     :common {:conjClass :Suffix,
              :lexeme :are,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :stemClass :VFin2,
              :tam :Present}
@@ -2632,7 +2629,7 @@
     :common {:conjClass :Suffix,
              :lexeme :are,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :stemClass :VFin2,
              :tam :PresentShort}
@@ -2652,7 +2649,7 @@
     :common {:conjClass :Suffix,
              :lexeme :yak,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Past}
     :terms [[:number :person :gender :token],
@@ -2671,7 +2668,7 @@
     :common {:conjClass :Suffix,
              :lexeme :yak,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Past}
     :terms [[:number :person :gender :token],
@@ -2692,7 +2689,7 @@
              :number :Singular,
              :person :Person3,
              :pos :Verb,
-             :morphClass :Overview_SuffPastPres}
+             }
     :terms [[:lexeme :tam :token],
             [:afirh :Past "afirhíya"],
             [:afirh :Present "afirhíini"],
@@ -2713,7 +2710,7 @@
     :common {:conjClass :Suffix,
              :lexeme :yak,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Present}
     :terms [[:number :person :gender :token],
@@ -2732,7 +2729,7 @@
     :common {:conjClass :Suffix,
              :lexeme :yak,
              :polarity :Negative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Present}
     :terms [[:number :person :gender :token],
@@ -2751,7 +2748,7 @@
     :common {:conjClass :Suffix,
              :lexeme :yak,
              :polarity :Affirmative,
-             :morphClass :Finite,
+             
              :pos :Verb,
              :tam :Aorist}
     :terms [[:number :person :gender :token],
@@ -2770,7 +2767,7 @@
     :common {:person :Person1,
              :gender :Common,
              :pos :Verb,
-             :morphClass :Overview_TenseAsp}
+             }
     :terms [[:conjClass :tam :number :lexeme :token :token-note-aux],
             [:Prefix :Future :Singular :diy "íyaad ándi" "ándi"],
             [:Prefix :Future :Plural :diy "níyaa néeyad" "néeyad"],
@@ -2793,7 +2790,7 @@
              :person :Person1,
              :tam :Future,
              :number :Singular,
-             :morphClass :Partial_Future}
+             }
     :terms [[:rootClass :polarity :conjClass :lexeme :token],
             [:CHiy :Affirmative :Prefix :dHiy "íid’a ad’a ándi"],
             [:CHiy :Negative :Prefix :dHiy "íid’a káadi"],
@@ -2806,7 +2803,7 @@
             [:CiC :Affirmative :Prefix :rib "íirib ándi"],
             [:CiC :Negative :Prefix :rib "íirib káadi"],
             [:CiCaC :Affirmative :Prefix :fiyak "itfiyák ándi"],
-            [:CiCac :Negative :Prefix :fiyak "itfiyák káadi"],
+            [:CiCaC :Negative :Prefix :fiyak "itfiyák káadi"],
             [:CiCiC :Affirmative :Prefix :sibib "íišbib ándi"],
             [:CiCiC :Affirmative :Prefix :sibib "íišbib káadi"],
             [:CiCiy :Affirmative :Prefix :miriy "ímaar ándi"],
@@ -2822,9 +2819,8 @@
 :muterms [
     {:label "beja_W-PObjSuff"
     :note "Wedekind-etal2007 Table #31"
-    :pdgmType :NA
-    :common {:morpheme :PRO,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :ObjSuff}
     :terms [[:number :person :token],
             [:Singular :Person1 "-heeb"],
@@ -2834,9 +2830,8 @@
     }
     {:label "beja_W-PPersInd"
     :note "Wedekind-etal2007 Table #14"
-    :pdgmType :NA
-    :common {:morpheme :PRO,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :IndependentPersonal}
     :terms [[:case :number :person :gender :token],
             [:Object :Singular :Person1 :Common "anéeb"],
@@ -2862,9 +2857,8 @@
     }
     {:label "beja_W-PPersSuff"
     :note "Wedekind-etal2007 Table #13"
-    :pdgmType :NA
-    :common {:morpheme :PRO,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :PersSuff}
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Masc "-bu / -yu"],
@@ -2882,9 +2876,8 @@
     }
     {:label "beja_W-PPoss"
     :note "Wedekind-etal2007 Table #22"
-    :pdgmType :NA
-    :common {:morpheme :PRO,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :IndependentPossessive}
     :terms [[:genHead :numHead :number :person :gender :token],
             [:H_Fem :H_Plural :Singular :Person1 :Common "ániita"],
@@ -2930,9 +2923,8 @@
     }
     {:label "beja_W-PPossSuff"
     :note "Wedekind-etal2007 Table #21"
-    :pdgmType :NA
-    :common {:morpheme :PRO,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :PossSuff}
     :terms [[:numHead :number :person :token],
             [:H_Plural :Singular :Person1 "-yii -yee"],
@@ -2951,12 +2943,11 @@
     {:label "beja_W-VNegObjSuffPdgm-hiy"
     :note "Wedekind-etal2007 p. 144"
     :pdgmType :Overview_ObjSuffwVerbNeg
-    :common {:morpheme :PRO,
-             :lexeme :hiy,
+    :common {:lexeme :hiy,
              :polarity :Negative,
              :tam :Past,
              :pos :Verb,
-             :morphClass :Overview_ObjSuffwVerbNeg}
+             }
     :terms [[:genObj :numObj :persObj :number :person :gender :token],
             [:O_Common :O_Plural :O_Person1 :Singular :Person2 :Masc "hinín hiyaayóon kíttaa"],
             [:O_Common :O_Plural :O_Person1 :Singular :Person2 :Fem "hinín hiyaatóon kíttaayi"],
@@ -3043,7 +3034,6 @@
     :note "Wedekind-etal2007 Table #30"
     :pdgmType :Affix_SubjPref
     :common {:conjClass :Prefix,
-             :morphClass :Affix_SubjPref,
              :pos :Verb}
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "a-"],
@@ -3060,7 +3050,7 @@
     :pdgmType :Affix_RelSuff
     :common {:clauseType :Relative,
              :pos :Verb,
-             :morphClass :Affix_RelSuff}
+             }
     :terms [[:caseHead :formFrequency :genHead :headPosition :token],
             [:H_Object :Frequent :H_Fem :HeadFollow "-eet"],
             [:H_Object :Frequent :H_Fem :HeadFollow "-eet –too-na"],
