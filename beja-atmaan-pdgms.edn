@@ -6,7 +6,8 @@
 :datasourceNotes "Wedekind uses the term 'Past Continuous' for what is here termed ':Aorist'"
 :geodemoURL "http://www.ethnologue.com/language/bej"
 :geodemoTXT "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan, Eritrea, and Egypt by more than a million individuals. The Atmaan variety is spoken in Eastern Sudan, and is described in Wedekind-etal2007."
- :schemata {:case [:Object  :Subject],
+ :schemata {:vmorphClass [:Affix_RelSuff  :Affix_SubjPref :NonFin_NomForm :NonFin_NomSuffixClass :NonFin_Participle :Overview_Aux :Overview_AuxPut :Overview_AuxTake :Overview_FutureIntention :Overview_IntensiveAction :Overview_Interrogation :Overview_Mood :Overview_NegAux :Overview_NominalizationPatterns :Overview_ObjSuffwVerb :Overview_ObjSuffwVerbNeg :Overview_SuffPastPres :Overview_TenseAsp :Partial_Future],
+            :case [:Object :Subject],
             :caseHead [:H_Object :H_Subject],
             :clauseType [:Relative],
             :conjClass [:Irregular :Prefix :Suffix],
@@ -27,9 +28,9 @@
             :proClass [:IndependentPersonal :IndependentPossessive :ObjSuff :ObjSuffwVerb :PersSuff :PossSuff],
             :rootClass [:CHiy :CaC :Cay :CiC :CiCH :CiCaC :CiCiC :CiCiy :Ciy :HaCiC :Invar],
             :stemClass [:HFin :HamzFin :HamzInitVFin :VFin1 :VFin2],
-            :strength [:weak],
+            :strength [:Weak],
             :tam [:Aorist :Future :Imperative :Jussive :Past :PastAlt :PastPerfect :Present :PresentShort]
-            :pdgmType [:Affix_RelSuff :Affix_SubjPref :Finite :NA :NonFin_NomForm :NonFin_NomSuffixClass :NonFin_Participle :Overview_Aux :Overview_AuxPut :Overview_AuxTake :Overview_FutureIntention :Overview_IntensiveAction :Overview_Interrogation :Overview_Mood :Overview_NegAux :Overview_NominalizationPatterns :Overview_ObjSuffwVerb :Overview_ObjSuffwVerbNeg :Overview_SuffPastPres :Overview_TenseAsp :Partial_Become :Partial_Future :Partial_ImperativeWeak :Partial_PrefVerbImperative :PRO]}
+            :pdgmType [:Finite :PRO :FiniteImperativeWeak :FinitePartialBecome :FinitePrefVerbImperative :VOther]}
 :pclass {:pngClass [:person :number :gender :genHead :genObj :numHead :numObj :persObj],
           :synsemClass [:case :caseHead :clauseType :derivedStem :derivedStemAug :headPosition :nonFiniteForm :polarity :pos :proClass :tam],
           :inflClass [:conjClass :rootClass :stemClass :strength],
@@ -121,8 +122,9 @@
 :lxterms [
     {:label "beja_W-VPreNomAct"
     :note "Wedekind-etal2007 p. 113"
-    :pdgmType :NonFin_NomForm
-    :common {:conjClass :Prefix,
+    :pdgmType :VOther
+    :common {:vmorphClass :NonFin_NomForm
+             :conjClass :Prefix,
              :gender :Common,
              :nonFiniteForm :NominalAction,
              :pos :Verb}
@@ -140,9 +142,9 @@
     }
     {:label "beja_W-VParticiple"
     :note "Wedekind-etal2007 p. 106, etc."
-    :pdgmType :NonFin_Participle
-    :common {:gender :Masc,
-             
+    :pdgmType :VOther
+    :common {:vmorphClass :NonFin_Participle
+             :gender :Masc,
              :nonFiniteForm :Participle,
              :pos :Verb}
     :terms [[:conjClass :lexeme :polarity :rootClass :token],
@@ -175,8 +177,9 @@
     }
     {:label "beja_W-VSuffPdgmOverview-nonFinite-yak"
     :note "Wedekind-etal2007 p. 90"
-    :pdgmType :NonFin_NomSuffixClass
-    :common {:conjClass :Suffix,
+    :pdgmType :VOther
+    :common {:vmorphClass :NonFin_NomSuffixClass
+             :conjClass :Suffix,
              :lexeme :yak,
              :pos :Verb,
              }
@@ -205,7 +208,7 @@
     }
     {:label "beja_W-VAffObjSuff-hiy"
     :note "Wedekind-etal2007 p. 133; D1.6.6"
-    :pdgmType :NA
+    :pdgmType :PRO
     :common {:lexeme :hiy,
              :polarity :Affirmative,
              :pos :Pronoun,
@@ -231,8 +234,8 @@
     }
     {:label "beja_W-VAorRepetitive"
     :note "Wedekind-etal2007 p. 156"
-    :pdgmType :Overview_IntensiveAction
-    :common {
+    :pdgmType :VOther
+    :common {:vmorphClass :Overview_IntensiveAction
              :number :Singular,
              :person :Person1,
              :pos :Verb,
@@ -253,8 +256,8 @@
     }
     {:label "beja_W-VAuxOverview"
     :note "Wedekind-etal2007 Table #33"
-    :pdgmType :Overview_Aux
-    :common {
+    :pdgmType :VOther
+    :common {:vmorphClass :Overview_Aux
              :pos :Verb}
     :terms [[:lexeme :token :token-note-auxGloss],
             [:aha "háya" "\"to do at once\", >take"],
@@ -267,8 +270,9 @@
     }
     {:label "beja_W-VAuxPut-dilib"
     :note "Wedekind-etal2007 p. 156. The aux aha take and diya put with verb diliba trade yields respectively buy and sell."
-    :pdgmType :Overview_AuxPut
-    :common {:lexeme :dilib,
+    :pdgmType :VOther
+    :common {:vmorphClass :Overview_AuxPut
+             :lexeme :dilib,
              :polarity :Affirmative,
              :rootClass :CiCiC,
              :pos :Verb,
@@ -301,8 +305,9 @@
     }
     {:label "beja_W-VAuxTake-dilib"
     :note "Wedekind-etal2007 p. 156. The aux aha take and diya put with verb diliba trade yields respectively buy and sell."
-    :pdgmType :Overview_AuxTake
-    :common {:lexeme :dilib,
+    :pdgmType :VOther
+    :common {:vmorphClass :Overview_AuxTake
+             :lexeme :dilib,
              :rootClass :CiCiC,
              :pos :Verb,
              }
@@ -365,8 +370,9 @@
     }
     {:label "beja_W-VImprtvMood-diy"
     :note "Wedekind-etal2007 p. 162"
-    :pdgmType :Overview_Mood
-    :common {:lexeme :diy,
+    :pdgmType :VOther
+    :common {:vmorphClass :Overview_Mood
+             :lexeme :diy,
              :person :Person2,
              :pos :Verb,
              :tam :Imperative,
@@ -616,8 +622,9 @@
     }
     {:label "beja_W-VNegNegAux"
     :note "Wedekind-etal2007 p. 147"
-    :pdgmType :Overview_NegAux
-    :common {:polarity :Negative,
+    :pdgmType :VOther
+    :common {:vmorphClass :Overview_NegAux
+             :polarity :Negative,
              :pos :Verb,
              }
     :terms [[:token :token-note],
@@ -651,8 +658,9 @@
     }
     {:label "beja_W-VNegObjSuffExx"
     :note "Wedekind-etal2007 p. 143"
-    :pdgmType :Overview_ObjSuffwVerb
-    :common {:polarity :Negative,
+    :pdgmType :VOther
+    :common {:vmorphClass :Overview_ObjSuffwVerb
+             :polarity :Negative,
              :pos :Verb,
              }
     :terms [[:genObj :lexeme :numObj :persObj :number :person :gender :token :token-note],
@@ -691,8 +699,8 @@
     }
     {:label "beja_W-VNominalizationPatterns"
     :note "Wedekind-etal2007 Table #34-35"
-    :pdgmType :Overview_NominalizationPatterns
-    :common {
+    :pdgmType :VOther
+    :common {:vmorphClass :Overview_NominalizationPatterns
              :pos :Verb}
     :terms [[:conjClass :lexeme :token :token-note],
             [:Prefix :bis "bis-a → oo-baas" "bury - goes_to the burial"],
@@ -2082,7 +2090,7 @@
     }
     {:label "beja_W-VPrefTransVerbPatterns"
     :note "Wedekind-etal2007 p. 124"
-    :pdgmType :Partial_PrefVerbImperative
+    :pdgmType :FinitePrefVerbImperative
     :common {:conjClass :Prefix,
              
              :person :Person2,
@@ -2158,13 +2166,13 @@
     }
     {:label "beja_W-VSuffAffFutureBecome-gwa"
     :note "Wedekind-etal2007 p. 152"
-    :pdgmType :Partial_Become
+    :pdgmType :FinitePartialBecome
     :common {:conjClass :Suffix,
              :lexeme :gwa,
              :number :Singular,
              :polarity :Affirmative,
              :pos :Verb,
-             :strength :weak,
+             :strength :Weak,
              :tam :Future,
              }
     :terms [[:person :gender :token],
@@ -2372,8 +2380,9 @@
     }
     {:label "beja_W-VSuffAorQ-gwa"
     :note "Wedekind-etal2007 p. 155"
-    :pdgmType :Overview_Interrogation
-    :common {:conjClass :Suffix,
+    :pdgmType :VOther
+    :common {:vmorphClass :Overview_Interrogation
+             :conjClass :Suffix,
              :lexeme :gwa,
              :pos :Verb,
              :tam :Aorist,
@@ -2389,8 +2398,9 @@
     }
     {:label "beja_W-VSuffFutureIntention"
     :note "Wedekind-etal2007 p. 154. V+a SAY = I want to V;V+1 SAY = I shall V."
-    :pdgmType :Overview_FutureIntention
-    :common {:conjClass :Suffix,
+    :pdgmType :VOther
+    :common {:vmorphClass :Overview_FutureIntention
+             :conjClass :Suffix,
              :person :Person1,
              :pos :Verb,
              :tam :Future}
@@ -2428,7 +2438,7 @@
     }
     {:label "beja_W-VSuffImprtvImprtvOverview"
     :note "Wedekind-etal2007 p. 97"
-    :pdgmType :Partial_ImperativeWeak
+    :pdgmType :FiniteImperativeWeak
     :common {:conjClass :Suffix,
              :person :Person2,
              :pos :Verb,
@@ -2683,8 +2693,9 @@
     }
     {:label "beja_W-VSuffPastPresOverview"
     :note "Wedekind-etal2007 p. 96"
-    :pdgmType :Overview_SuffPastPres
-    :common {:conjClass :Suffix,
+    :pdgmType :VOther
+    :common {:vmorphClass :Overview_SuffPastPres
+             :conjClass :Suffix,
              :gender :Masc,
              :number :Singular,
              :person :Person3,
@@ -2763,8 +2774,9 @@
     }
     {:label "beja_W-VTenseAspOverview-diy"
     :note "Wedekind-etal2007 Table #32"
-    :pdgmType :Overview_TenseAsp
-    :common {:person :Person1,
+    :pdgmType :VOther
+    :common {:vmorphClass :Overview_TenseAsp
+             :person :Person1,
              :gender :Common,
              :pos :Verb,
              }
@@ -2784,8 +2796,9 @@
     }
     {:label "beja_W-VPref_SuffAff_NegFuture"
     :note "Wedekind-etal2007 pp. 90, 103, 106, 107, 109, 111, 113, 115, 117, 119, 121"
-    :pdgmType :Partial_Future
-    :common {:gender :Common,
+    :pdgmType :VOther
+    :common {:vmorphClass :Partial_Future
+             :gender :Common,
              :pos :Verb,
              :person :Person1,
              :tam :Future,
@@ -2942,8 +2955,9 @@
     }
     {:label "beja_W-VNegObjSuffPdgm-hiy"
     :note "Wedekind-etal2007 p. 144"
-    :pdgmType :Overview_ObjSuffwVerbNeg
-    :common {:lexeme :hiy,
+    :pdgmType :VOther
+    :common {:vmorphClass :Overview_ObjSuffwVerbNeg
+             :lexeme :hiy,
              :polarity :Negative,
              :tam :Past,
              :pos :Verb,
@@ -3032,8 +3046,9 @@
     }
     {:label "beja_W-VPrefSubjPref"
     :note "Wedekind-etal2007 Table #30"
-    :pdgmType :Affix_SubjPref
-    :common {:conjClass :Prefix,
+    :pdgmType :VOther
+    :common {:vmorphClass :Affix_SubjPref
+             :conjClass :Prefix,
              :pos :Verb}
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "a-"],
@@ -3047,8 +3062,9 @@
     }
     {:label "beja_W-VRelRelSuff"
     :note "Wedekind-etal2007 Table #41. Table #41:Relative Verb Suffixes"
-    :pdgmType :Affix_RelSuff
-    :common {:clauseType :Relative,
+    :pdgmType :VOther
+    :common {:vmorphClass :Affix_RelSuff
+             :clauseType :Relative,
              :pos :Verb,
              }
     :terms [[:caseHead :formFrequency :genHead :headPosition :token],
