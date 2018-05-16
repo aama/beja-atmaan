@@ -184,7 +184,7 @@
                  }
                 {:label "beja_W-VAffFuture-become"
                  :note "Wedekind-etal2007 p. 154 (cf. also 152) (iikta become frm aka,kaya ?). Tokens to be glossed: 'I will become a teacher', etc."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Irregular,
                           :lexeme :kay,
                           :polarity :Affirmative,
@@ -378,7 +378,7 @@
                  }
                 {:label "beja_W-VIrregAffAor-bariy"
                  :note "Wedekind-etal2007 p. 123. The morphologically past forms éefi, etc., has present meaning."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Irregular,
                           :lexeme :bariy,
                           :polarity :Affirmative,
@@ -396,7 +396,7 @@
                  }
                 {:label "beja_W-VIrregAffAor-fay"
                  :note "Wedekind-etal2007 p. 123. The morphologically past form éefi, etc., has present meaning."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Irregular,
                           :lexeme :fay,
                           :polarity :Affirmative,
@@ -414,7 +414,7 @@
                  }
                 {:label "beja_W-VIrregAffAor-hiy"
                  :note "Wedekind-etal2007 p. 123. The morphologically past form éefi, etc., has present meaning."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Irregular,
                           :lexeme :hiy,
                           :polarity :Affirmative,
@@ -432,7 +432,7 @@
                  }
                 {:label "beja_W-VIrregAffPast-bariy"
                  :note "Wedekind-etal2007 p. 123. The morphologically past forms éefi, etc., has present meaning."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Irregular,
                           :lexeme :bariy,
                           :polarity :Affirmative,
@@ -450,7 +450,7 @@
                  }
                 {:label "beja_W-VIrregAffPast-fay"
                  :note "Wedekind-etal2007 p. 123. The morphologically past form éefi, etc., has present meaning."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Irregular,
                           :lexeme :fay,
                           :polarity :Affirmative,
@@ -468,7 +468,7 @@
                  }
                 {:label "beja_W-VIrregAffPast-hiy"
                  :note "Wedekind-etal2007 p. 123. The morphologically past form éefi, etc., has present meaning."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Irregular,
                           :lexeme :hiy,
                           :polarity :Affirmative,
@@ -486,7 +486,7 @@
                  }
                 {:label "beja_W-VIrregAffPast-kay"
                  :note "Wedekind-etal2007 p. 122 'I became a Hadendowa'"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Irregular,
                           :lexeme :kay,
                           :polarity :Affirmative,
@@ -504,7 +504,7 @@
                  }
                 {:label "beja_W-VIrregNegPres-kay"
                  :note "Wedekind-etal2007 p. 122 'I am not in a hurry' ..."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Irregular,
                           :lexeme :kay,
                           :polarity :Negative,
@@ -522,7 +522,7 @@
                  }
                 {:label "beja_W-VJussMood"
                  :note "Wedekind-etal2007 p. 165"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :diy,
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -538,7 +538,7 @@
                  }
                 {:label "beja_W-VJussMood"
                  :note "Wedekind-etal2007 p. 165"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :sibib,
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -553,7 +553,7 @@
                  }
                 {:label "beja_W-VJussMood"
                  :note "Wedekind-etal2007 p. 165"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :rib,
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -568,7 +568,7 @@
                  }
                 {:label "beja_W-VJussMood"
                  :note "Wedekind-etal2007 p. 165"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :dHiy,
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -583,7 +583,7 @@
                  }
                 {:label "beja_W-VNegFuture-become"
                  :note "Wedekind-etal2007 p. 154 (cf. also 152) (iikta become frm aka,kaya ?) 'I will not become a teacher'..."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Irregular,
                           :lexeme :kay,
                           :polarity :Negative,
@@ -617,7 +617,7 @@
                  }
                 {:label "beja_W-VNegNegCop-kay"
                  :note "Wedekind-etal2007 p. 143 'I am not a liar' ..."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :kay,
                           :conjClass :Irregular,
                           :tam :Present,
@@ -687,7 +687,7 @@
                  }
                 {:label "beja_W-VPrefAffFuture-dam"
                  :note "Wedekind-etal2007 p. 152"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dam,
                           :polarity :Affirmative,
@@ -705,7 +705,7 @@
                  }
                 {:label "beja_W-VPrefCHiyAffAor-diy"
                  :note "Wedekind-etal2007 p. 106"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dHiy,
                           :polarity :Affirmative,
@@ -724,7 +724,7 @@
                  }
                 {:label "beja_W-VPrefCHiyAffImprtv-diy"
                  :note "Wedekind-etal2007 p. 106"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dHiy,
                           :person :Person2,
@@ -739,7 +739,7 @@
                  }
                 {:label "beja_W-VPrefCHiyAffPast-diy"
                  :note "Wedekind-etal2007 p. 106"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dHiy,
                           :polarity :Affirmative,
@@ -758,7 +758,7 @@
                  }
                 {:label "beja_W-VPrefCHiyAffPres-diy"
                  :note "Wedekind-etal2007 p. 106"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dHiy,
                           :polarity :Affirmative,
@@ -777,7 +777,7 @@
                  }
                 {:label "beja_W-VPrefCHiyNegImprtv-diy"
                  :note "Wedekind-etal2007 p. 106"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dHiy,
                           :person :Person2,
@@ -792,7 +792,7 @@
                  }
                 {:label "beja_W-VPrefCHiyNegPast-diy"
                  :note "Wedekind-etal2007 p. 106"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dHiy,
                           :polarity :Negative,
@@ -811,7 +811,7 @@
                  }
                 {:label "beja_W-VPrefCHiyNegPres-diy"
                  :note "Wedekind-etal2007 p. 106"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dHiy,
                           :polarity :Negative,
@@ -830,7 +830,7 @@
                  }
                 {:label "beja_W-VPrefCaCAffAor-naw"
                  :note "Wedekind-etal2007 p. 115"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :naw,
                           :polarity :Affirmative,
@@ -849,7 +849,7 @@
                  }
                 {:label "beja_W-VPrefCaCAffImprtv-naw"
                  :note "Wedekind-etal2007 p. 115"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :naw,
                           :person :Person2,
@@ -864,7 +864,7 @@
                  }
                 {:label "beja_W-VPrefCaCAffPast-naw"
                  :note "Wedekind-etal2007 p. 115"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :naw,
                           :polarity :Affirmative,
@@ -883,7 +883,7 @@
                  }
                 {:label "beja_W-VPrefCaCAffPres-naw"
                  :note "Wedekind-etal2007 p. 115"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :naw,
                           :polarity :Affirmative,
@@ -902,7 +902,7 @@
                  }
                 {:label "beja_W-VPrefCaCNegImprtv-naw"
                  :note "Wedekind-etal2007 p. 115"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :naw,
                           :person :Person2,
@@ -917,7 +917,7 @@
                  }
                 {:label "beja_W-VPrefCaCNegPast-naw"
                  :note "Wedekind-etal2007 p. 115"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :naw,
                           :polarity :Negative,
@@ -936,7 +936,7 @@
                  }
                 {:label "beja_W-VPrefCaCNegPres-naw"
                  :note "Wedekind-etal2007 p. 115"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :naw,
                           :polarity :Negative,
@@ -955,7 +955,7 @@
                  }
                 {:label "beja_W-VPrefCayAffAor-bay"
                  :note "Wedekind-etal2007 p. 117"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bay,
                           :polarity :Affirmative,
@@ -974,7 +974,7 @@
                  }
                 {:label "beja_W-VPrefCayAffImprtv-bay"
                  :note "Wedekind-etal2007 p. 117"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bay,
                           :person :Person2,
@@ -989,7 +989,7 @@
                  }
                 {:label "beja_W-VPrefCayAffPast-bay"
                  :note "Wedekind-etal2007 p. 117"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bay,
                           :polarity :Affirmative,
@@ -1008,7 +1008,7 @@
                  }
                 {:label "beja_W-VPrefCayAffPres-bay"
                  :note "Wedekind-etal2007 p. 117"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bay,
                           :polarity :Affirmative,
@@ -1027,7 +1027,7 @@
                  }
                 {:label "beja_W-VPrefCayNegImprtv-bay"
                  :note "Wedekind-etal2007 p. 117"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bay,
                           :person :Person2,
@@ -1042,7 +1042,7 @@
                  }
                 {:label "beja_W-VPrefCayNegPast-bay"
                  :note "Wedekind-etal2007 p. 117"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bay,
                           :polarity :Negative,
@@ -1061,7 +1061,7 @@
                  }
                 {:label "beja_W-VPrefCayNegPres-bay"
                  :note "Wedekind-etal2007 p. 117"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bay,
                           :polarity :Negative,
@@ -1080,7 +1080,7 @@
                  }
                 {:label "beja_W-VPrefCiCAffAor-rib"
                  :note "Wedekind-etal2007 p. 107"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :rib,
                           :polarity :Affirmative,
@@ -1099,7 +1099,7 @@
                  }
                 {:label "beja_W-VPrefCiCAffImprtv-rib"
                  :note "Wedekind-etal2007 p. 107"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :rib,
                           :person :Person2,
@@ -1114,7 +1114,7 @@
                  }
                 {:label "beja_W-VPrefCiCAffPast-rib"
                  :note "Wedekind-etal2007 p. 107"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :rib,
                           :polarity :Affirmative,
@@ -1133,7 +1133,7 @@
                  }
                 {:label "beja_W-VPrefCiCAffPres-rib"
                  :note "Wedekind-etal2007 p. 107"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :rib,
                           :polarity :Affirmative,
@@ -1152,7 +1152,7 @@
                  }
                 {:label "beja_W-VPrefCiCHAffAor-fir"
                  :note "Wedekind-etal2007 p. 121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fir,
                           :polarity :Affirmative,
@@ -1171,7 +1171,7 @@
                  }
                 {:label "beja_W-VPrefCiCHAffImprtv-fir"
                  :note "Wedekind-etal2007 p. 121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fir,
                           :person :Person2,
@@ -1186,7 +1186,7 @@
                  }
                 {:label "beja_W-VPrefCiCHAffPast-fir"
                  :note "Wedekind-etal2007 p. 121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fir,
                           :polarity :Affirmative,
@@ -1205,7 +1205,7 @@
                  }
                 {:label "beja_W-VPrefCiCHAffPres-fir"
                  :note "Wedekind-etal2007 p. 121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fir,
                           :polarity :Affirmative,
@@ -1224,7 +1224,7 @@
                  }
                 {:label "beja_W-VPrefCiCHNegImprtv-fir"
                  :note "Wedekind-etal2007 p. 121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fir,
                           :person :Person2,
@@ -1239,7 +1239,7 @@
                  }
                 {:label "beja_W-VPrefCiCHNegPast-fir"
                  :note "Wedekind-etal2007 p. 121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fir,
                           :polarity :Negative,
@@ -1258,7 +1258,7 @@
                  }
                 {:label "beja_W-VPrefCiCHNegPres-fir"
                  :note "Wedekind-etal2007 p. 121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fir,
                           :polarity :Negative,
@@ -1277,7 +1277,7 @@
                  }
                 {:label "beja_W-VPrefCiCNegImprtv-rib"
                  :note "Wedekind-etal2007 p. 107"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :rib,
                           :person :Person2,
@@ -1292,7 +1292,7 @@
                  }
                 {:label "beja_W-VPrefCiCNegPast-rib"
                  :note "Wedekind-etal2007 p. 107"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :rib,
                           :polarity :Negative,
@@ -1311,7 +1311,7 @@
                  }
                 {:label "beja_W-VPrefCiCNegPres-rib"
                  :note "Wedekind-etal2007 p. 107"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :rib,
                           :polarity :Negative,
@@ -1330,7 +1330,7 @@
                  }
                 {:label "beja_W-VPrefCiCaCAffAor-fiyak"
                  :note "Wedekind-etal2007 p. 119"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fiyak,
                           :polarity :Affirmative,
@@ -1349,7 +1349,7 @@
                  }
                 {:label "beja_W-VPrefCiCaCAffImprtv-fiyak"
                  :note "Wedekind-etal2007 p. 119"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fiyak,
                           :person :Person2,
@@ -1364,7 +1364,7 @@
                  }
                 {:label "beja_W-VPrefCiCaCAffPast-fiyak"
                  :note "Wedekind-etal2007 p. 119"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fiyak,
                           :polarity :Affirmative,
@@ -1383,7 +1383,7 @@
                  }
                 {:label "beja_W-VPrefCiCaCAffPres-fiyak"
                  :note "Wedekind-etal2007 p. 119"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fiyak,
                           :polarity :Affirmative,
@@ -1402,7 +1402,7 @@
                  }
                 {:label "beja_W-VPrefCiCaCNegAor-fiyak"
                  :note "Wedekind-etal2007 p. 119"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fiyak,
                           :polarity :Negative,
@@ -1421,7 +1421,7 @@
                  }
                 {:label "beja_W-VPrefCiCaCNegImprtv-fiyak"
                  :note "Wedekind-etal2007 p. 119"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fiyak,
                           :person :Person2,
@@ -1436,7 +1436,7 @@
                  }
                 {:label "beja_W-VPrefCiCaCNegPres-fiyak"
                  :note "Wedekind-etal2007 p. 119"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fiyak,
                           :polarity :Negative,
@@ -1455,7 +1455,7 @@
                  }
                 {:label "beja_W-VPrefCiCiCAffAor-sibib"
                  :note "Wedekind-etal2007 p. 109"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :sibib,
                           :polarity :Affirmative,
@@ -1474,7 +1474,7 @@
                  }
                 {:label "beja_W-VPrefCiCiCAffImprtv-sibib"
                  :note "Wedekind-etal2007 p. 109"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :sibib,
                           :person :Person2,
@@ -1489,7 +1489,7 @@
                  }
                 {:label "beja_W-VPrefCiCiCAffPast-sibib"
                  :note "Wedekind-etal2007 p. 109"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :sibib,
                           :polarity :Affirmative,
@@ -1508,7 +1508,7 @@
                  }
                 {:label "beja_W-VPrefCiCiCAffPres-sibib"
                  :note "Wedekind-etal2007 p. 109"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :sibib,
                           :polarity :Affirmative,
@@ -1527,7 +1527,7 @@
                  }
                 {:label "beja_W-VPrefCiCiCNegImprtv-sibib"
                  :note "Wedekind-etal2007 p. 109"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :sibib,
                           :person :Person2,
@@ -1542,7 +1542,7 @@
                  }
                 {:label "beja_W-VPrefCiCiCNegPast-sibib"
                  :note "Wedekind-etal2007 p. 109"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :sibib,
                           :polarity :Negative,
@@ -1561,7 +1561,7 @@
                  }
                 {:label "beja_W-VPrefCiCiCNegPres-sibib"
                  :note "Wedekind-etal2007 p. 109"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :sibib,
                           :polarity :Negative,
@@ -1580,7 +1580,7 @@
                  }
                 {:label "beja_W-VPrefCiCiyAffAor-miriy"
                  :note "Wedekind-etal2007 p. 111"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :miriy,
                           :polarity :Affirmative,
@@ -1599,7 +1599,7 @@
                  }
                 {:label "beja_W-VPrefCiCiyAffImprtv-miriy"
                  :note "Wedekind-etal2007 p. 111"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :miriy,
                           :person :Person2,
@@ -1614,7 +1614,7 @@
                  }
                 {:label "beja_W-VPrefCiCiyAffPast-miriy"
                  :note "Wedekind-etal2007 p. 111"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :miriy,
                           :polarity :Affirmative,
@@ -1633,7 +1633,7 @@
                  }
                 {:label "beja_W-VPrefCiCiyAffPres-miriy"
                  :note "Wedekind-etal2007 p. 111"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :miriy,
                           :polarity :Affirmative,
@@ -1652,7 +1652,7 @@
                  }
                 {:label "beja_W-VPrefCiCiyNegImprtv-miriy"
                  :note "Wedekind-etal2007 p. 111"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :miriy,
                           :person :Person2,
@@ -1667,7 +1667,7 @@
                  }
                 {:label "beja_W-VPrefCiCiyNegPast-miriy"
                  :note "Wedekind-etal2007 p. 111"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :miriy,
                           :polarity :Negative,
@@ -1686,7 +1686,7 @@
                  }
                 {:label "beja_W-VPrefCiCiyNegPres-miriy"
                  :note "Wedekind-etal2007 p. 111"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :miriy,
                           :polarity :Negative,
@@ -1705,7 +1705,7 @@
                  }
                 {:label "beja_W-VPrefCiyAffAor-diy"
                  :note "Wedekind-etal2007 p. 103"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :diy,
                           :polarity :Affirmative,
@@ -1724,7 +1724,7 @@
                  }
                 {:label "beja_W-VPrefCiyAffImprtv-diy"
                  :note "Wedekind-etal2007 p. 103"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :diy,
                           :person :Person2,
@@ -1739,7 +1739,7 @@
                  }
                 {:label "beja_W-VPrefCiyAffPast-diy"
                  :note "Wedekind-etal2007 p. 103"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :diy,
                           :polarity :Affirmative,
@@ -1758,7 +1758,7 @@
                  }
                 {:label "beja_W-VPrefCiyAffPres-diy"
                  :note "Wedekind-etal2007 p. 103"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :diy,
                           :polarity :Affirmative,
@@ -1777,7 +1777,7 @@
                  }
                 {:label "beja_W-VPrefCiyNegImprtv-diy"
                  :note "Wedekind-etal2007 p. 103"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :diy,
                           :person :Person2,
@@ -1792,7 +1792,7 @@
                  }
                 {:label "beja_W-VPrefCiyNegPast-diy"
                  :note "Wedekind-etal2007 p. 103"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :diy,
                           :polarity :Negative,
@@ -1811,7 +1811,7 @@
                  }
                 {:label "beja_W-VPrefCiyNegPres-diy"
                  :note "Wedekind-etal2007 p. 103"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :diy,
                           :polarity :Negative,
@@ -1830,7 +1830,7 @@
                  }
                 {:label "beja_W-VPrefHaCiCAffAor-hariw"
                  :note "Wedekind-etal2007 p. 113"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :hariw,
                           :polarity :Affirmative,
@@ -1849,7 +1849,7 @@
                  }
                 {:label "beja_W-VPrefHaCiCAffImprtv-hariw"
                  :note "Wedekind-etal2007 p. 113"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :hariw,
                           :person :Person2,
@@ -1864,7 +1864,7 @@
                  }
                 {:label "beja_W-VPrefHaCiCAffPast-hariw"
                  :note "Wedekind-etal2007 p. 113"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :hariw,
                           :polarity :Affirmative,
@@ -1883,7 +1883,7 @@
                  }
                 {:label "beja_W-VPrefHaCiCAffPres-hariw"
                  :note "Wedekind-etal2007 p. 113"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :hariw,
                           :polarity :Affirmative,
@@ -1902,7 +1902,7 @@
                  }
                 {:label "beja_W-VPrefHaCiCNegImprtv-hariw"
                  :note "Wedekind-etal2007 p. 113"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :hariw,
                           :person :Person2,
@@ -1917,7 +1917,7 @@
                  }
                 {:label "beja_W-VPrefHaCiCNegPast-hariw"
                  :note "Wedekind-etal2007 p. 113"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :hariw,
                           :polarity :Negative,
@@ -1936,7 +1936,7 @@
                  }
                 {:label "beja_W-VPrefHaCiCNegPres-hariw"
                  :note "Wedekind-etal2007 p. 113"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :hariw,
                           :polarity :Negative,
@@ -1955,7 +1955,7 @@
                  }
                 {:label "beja_W-VPrefNegCiCaCPast-fiyak"
                  :note "Wedekind-etal2007 p. 119"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fiyak,
                           :polarity :Negative,
@@ -1974,7 +1974,7 @@
                  }
                 {:label "beja_W-VPrefPast"
                  :note "Wedekind-etal2007 Table #29. There are two paradigms of say,-ni- and –di-. Presently,for most Beja dialects,the second paradigm is the most common one,while the other one has only survived with certain speakers and in certain forms.(p.97)"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :diy,
                           :polarity :Affirmative,
@@ -1993,7 +1993,7 @@
                  }
                 {:label "beja_W-VPrefTransVerbPatterns"
                  :note "Wedekind-etal2007 p. 124"
-                 :common {:vmorphclass :FinitePrefVerbImperative
+                 :common {:vmorphClass :FinitePrefVerbImperative
                           :conjClass :Prefix,
                           :person :Person2,
                           :pos :Verb,
@@ -2068,7 +2068,7 @@
                  }
                 {:label "beja_W-VSuffAffFutureBecome-gwa"
                  :note "Wedekind-etal2007 p. 152"
-                 :common {:vmorphclass :FinitePartialBecome
+                 :common {:vmorphClass :FinitePartialBecome
                           :conjClass :Suffix,
                           :lexeme :gwa,
                           :number :Singular,
@@ -2084,7 +2084,7 @@
                  }
                 {:label "beja_W-VSuffAffHFinPast-rha"
                  :note "Wedekind-etal2007 p. 94"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :rih,
                           :polarity :Affirmative,
@@ -2103,7 +2103,7 @@
                  }
                 {:label "beja_W-VSuffAffHFinPres-rha"
                  :note "Wedekind-etal2007 p. 94"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :rih,
                           :polarity :Affirmative,
@@ -2122,7 +2122,7 @@
                  }
                 {:label "beja_W-VSuffAffHamzFinPast-gwa"
                  :note "Wedekind-etal2007 p. 94"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :gwa,
                           :polarity :Affirmative,
@@ -2141,7 +2141,7 @@
                  }
                 {:label "beja_W-VSuffAffHamzFinPres-gwa"
                  :note "Wedekind-etal2007 p. 94"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :gwa,
                           :polarity :Affirmative,
@@ -2160,7 +2160,7 @@
                  }
                 {:label "beja_W-VSuffAffHamzInitVFinPast-ee"
                  :note "Wedekind-etal2007 p. 93"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :ee,
                           :polarity :Affirmative,
@@ -2179,7 +2179,7 @@
                  }
                 {:label "beja_W-VSuffAffHamzInitVFinPres-ee"
                  :note "Wedekind-etal2007 p. 93"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :ee,
                           :polarity :Affirmative,
@@ -2198,7 +2198,7 @@
                  }
                 {:label "beja_W-VSuffAffPast-tam"
                  :note "Wedekind-etal2007 p. 91"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Affirmative,
@@ -2216,7 +2216,7 @@
                  }
                 {:label "beja_W-VSuffAffPres-tam"
                  :note "Wedekind-etal2007 p. 91"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Affirmative,
@@ -2234,7 +2234,7 @@
                  }
                 {:label "beja_W-VSuffAffVFin1Pres-agri"
                  :note "Wedekind-etal2007 p. 95"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :agrii,
                           :polarity :Affirmative,
@@ -2253,7 +2253,7 @@
                  }
                 {:label "beja_W-VSuffAffVFin2Pres-are"
                  :note "Wedekind-etal2007 p. 95"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :aree,
                           :polarity :Affirmative,
@@ -2314,7 +2314,7 @@
                  }
                 {:label "beja_W-VSuffImprtvAff-yak"
                  :note "Wedekind-etal2007 p.90"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :yak,
                           :polarity :Affirmative,
@@ -2327,7 +2327,7 @@
                  }
                 {:label "beja_W-VSuffImprtvImprtvOverview"
                  :note "Wedekind-etal2007 p. 97"
-                 :common {:vmorphclass :FiniteImperativeWeak
+                 :common {:vmorphClass :FiniteImperativeWeak
                           :conjClass :Suffix,
                           :person :Person2,
                           :pos :Verb,
@@ -2364,7 +2364,7 @@
                  }
                 {:label "beja_W-VSuffImprtvJuss1-raat"
                  :note "Wedekind-etal2007 Table #36"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :raat,
                           :person :Person2,
@@ -2378,7 +2378,7 @@
                  }
                 {:label "beja_W-VSuffImprtvJuss1-raat"
                  :note "Wedekind-etal2007 Table #36"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :raat,
                           :polarity :Affirmative,
@@ -2396,7 +2396,7 @@
                  }
                 {:label "beja_W-VSuffImprtvJuss2-gwa"
                  :note "Wedekind-etal2007 Table #37"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :gwa,
                           :polarity :Affirmative,
@@ -2414,7 +2414,7 @@
                  }
                 {:label "beja_W-VSuffImprtvJuss3-gwa"
                  :note "Wedekind-etal2007 Table #38"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :gwa,
                           :person :Person2,
@@ -2427,7 +2427,7 @@
                  }
                 {:label "beja_W-VSuffImprtvNeg-yak"
                  :note "Wedekind-etal2007 p.90"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :yak,
                           :polarity :Negative,
@@ -2440,7 +2440,7 @@
                  }
                 {:label "beja_W-VSuffNegHamzInitVFinPres-ee"
                  :note "Wedekind-etal2007 p. 93"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :ee,
                           :polarity :Negative,
@@ -2459,7 +2459,7 @@
                  }
                 {:label "beja_W-VSuffNegPres-tam"
                  :note "Wedekind-etal2007 p. 91"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Negative,
@@ -2477,7 +2477,7 @@
                  }
                 {:label "beja_W-VSuffNegVFin1Pres-agri"
                  :note "Wedekind-etal2007 p. 95"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :agrii,
                           :polarity :Negative,
@@ -2496,7 +2496,7 @@
                  }
                 {:label "beja_W-VSuffNegVFin2Pres-are"
                  :note "Wedekind-etal2007 p. 95"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :are,
                           :polarity :Negative,
@@ -2515,7 +2515,7 @@
                  }
                 {:label "beja_W-VSuffNegVFin2PresShort-are"
                  :note "Wedekind-etal2007 p. 95"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :are,
                           :polarity :Negative,
@@ -2534,7 +2534,7 @@
                  }
                 {:label "beja_W-VSuffPastAff-yak"
                  :note "Wedekind-etal2007 p.90"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :yak,
                           :polarity :Affirmative,
@@ -2552,7 +2552,7 @@
                  }
                 {:label "beja_W-VSuffPastNeg-yak"
                  :note "Wedekind-etal2007 p.90"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :yak,
                           :polarity :Negative,
@@ -2593,7 +2593,7 @@
                  }
                 {:label "beja_W-VSuffPresAff-yak"
                  :note "Wedekind-etal2007 p. 90 & Table #29"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :yak,
                           :polarity :Affirmative,
@@ -2611,7 +2611,7 @@
                  }
                 {:label "beja_W-VSuffPresNeg-yak"
                  :note "Wedekind-etal2007 p.90"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :yak,
                           :polarity :Negative,
@@ -2629,7 +2629,7 @@
                  }
                 {:label "beja_W-VSuffjAorAff-yak"
                  :note "Wedekind-etal2007 p.90"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :yak,
                           :polarity :Affirmative,
