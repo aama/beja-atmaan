@@ -6,31 +6,33 @@
  :datasourceNotes "Wedekind uses the term 'Past Continuous' for what is here termed ':Aorist'"
  :geodemoURL "http://www.ethnologue.com/language/bej"
  :geodemoTXT "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan, Eritrea, and Egypt by more than a million individuals. The Atmaan variety is spoken in Eastern Sudan, and is described in Wedekind-etal2007."
-:schemata { :case [:Object :Subject],
-           :caseHead [:H_Object :H_Subject],
-           :clauseType [:Relative],
-           :conjClass [:Irregular :Prefix :Suffix],
-           :derivedStemAug [:Repetitive :Simple],
-           :formFrequency [:Frequent :Rare],
-           :genHead [:H_Fem :H_Masc],
-           :genObj [:O_Common :O_Fem :O_Masc],
-           :gender [:Common :Fem :Masc],
-           :headPosition [:HeadFollow :HeadPrecede],
-           :nonFiniteForm [:NominalAction :Participle],
-           :numHead [:H_Plural :H_Singular],
-           :numObj [:O_Plural :O_Singular :Plural],
-           :number [:Plural :Singular],
-           :persObj [:O_Person1 :O_Person2 :O_Person3],
-           :person [:Person1 :Person2 :Person3],
-           :polarity [:Affirmative :Negative :_NA],
-           :pos [:Pronoun :Verb],
-           :proClass [:IndependentPersonal :IndependentPossessive :ObjSuff :ObjSuffwVerb :PersSuff :PossSuff],
-           :rootClass [:CHiy :CaC :Cay :CiC :CiCH :CiCaC :CiCiC :CiCiy :Ciy :HaCiC :Invar],
-           :stemClass [:HFin :HamzFin :HamzInitVFin :VFin1 :VFin2],
-           :strength [:Weak],
-           :tam [:Aorist :Future :Imperative :Jussive :Past :PastAlt :PastPerfect :Present :PresentShort],
-           :vmorphClass [:Finite  :FiniteImperativeWeak :FinitePartialBecome :FinitePrefVerbImperative :Affix_RelSuff :Affix_SubjPref :NonFin_NomForm :NonFin_NomSuffixClass :NonFin_Participle :Overview_Aux :Overview_AuxPut :Overview_AuxTake :Overview_FutureIntention :Overview_IntensiveAction :Overview_Interrogation :Overview_Mood :Overview_NegAux :Overview_NominalizationPatterns :Overview_ObjSuffwVerb :Overview_ObjSuffwVerbNeg :Overview_SuffPastPres :Overview_TenseAsp :Partial_Future]
-           }
+:schemata {:lexeme [:abik  :adgir :afirh :afreey :afrey :agir :agrii :aha :anf :anfiy :are :aree :assi :ba :bariy :bay :bidil :bireet :bis :dHiy :daas :dam :dhigwiy :dif :dilib :dir :diy :ee :fay :fidig :fir :fiyak :gad :gid :giig :gwa :ha :hagit :hariw :hasib :hayis :hiy :ish :kan :kay :kitib :kitim :ma :mikir :mir :miriy :naw :raat :raataa :rib :rih :sa :sak :sdd :sibib :sim :siniy :soo :tam :tikwikw :waaw :yak],
+ :case [:Object :Subject],
+ :caseHead [:H_Object :H_Subject],
+ :clauseType [:Relative],
+ :conjClass [:Irregular :Prefix :Suffix],
+ :derivedStemAug [:Repetitive :Simple],
+ :formFrequency [:Frequent :Rare],
+ :genHead [:H_Fem :H_Masc],
+ :genObj [:O_Common :O_Fem :O_Masc],
+ :gender [:Common :Fem :Masc],
+ :headPosition [:HeadFollow :HeadPrecede],
+ :nonFiniteForm [:NominalAction :Participle],
+ :numHead [:H_Plural :H_Singular],
+ :numObj [:O_Plural :O_Singular :Plural],
+ :number [:Plural :Singular],
+ :persObj [:O_Person1 :O_Person2 :O_Person3],
+ :person [:Person1 :Person2 :Person3],
+ :pmorphClass [:ProMorph],
+ :polarity [:Affirmative :Negative :_NA],
+ :pos [:Pronoun :Verb],
+ :proClass [:IndependentPersonal :IndependentPossessive :ObjSuff :ObjSuffwVerb :PersSuff :PossSuff],
+ :rootClass [:CHiy :CaC :Cay :CiC :CiCH :CiCaC :CiCiC :CiCiy :Ciy :HaCiC :Invar],
+ :stemClass [:HFin :HamzFin :HamzInitVFin :VFin1 :VFin2],
+ :strength [:Weak],
+ :tam [:Aorist :Future :Imperative :Jussive :Past :PastAlt :PastPerfect :Present :PresentShort],
+ :vmorphClass [:Affix_RelSuff :Affix_SubjPref :Finite :FiniteImperativeWeak :FinitePartialBecome :FinitePrefVerbImperative :NonFin_NomForm :NonFin_NomSuffixClass :NonFin_Participle :Overview_Aux :Overview_AuxPut :Overview_AuxTake :Overview_FutureIntention :Overview_IntensiveAction :Overview_Interrogation :Overview_Mood :Overview_NegAux :Overview_NominalizationPatterns :Overview_ObjSuffwVerb :Overview_ObjSuffwVerbNeg :Overview_SuffPastPres :Overview_TenseAsp :Partial_Future]
+ }
  :pclass {:pngClass [:person :number :gender :genHead :genObj :numHead :numObj :persObj],
           :synsemClass [:case :caseHead :clauseType :derivedStem :derivedStemAug :headPosition :nonFiniteForm :polarity :pos :proClass :tam],
           :inflClass [:conjClass :rootClass :stemClass :strength],
@@ -126,7 +128,7 @@
                           :pos :Verb}
                  :terms [[:rootClass :lexeme :token],
                          [:HaCiC :hariw "w-harúuw"],
-                         [:Ciy :dij "óo-myáad"],
+                         [:Ciy :diy "óo-myáad"],
                          [:CiCiy :miriy "óo-mraay óo-mrúuy"],
                          [:CiCiC :sibib "óo-šbúub"],
                          [:CiCaC :fiyak "tu-mifyéek tu-mifiyéek"],
@@ -204,7 +206,7 @@
                  :note "Wedekind-etal2007 p. 133; D1.6.6"
                  :common {:lexeme :hiy,
                           :polarity :Affirmative,
-                          :pos :Pronoun,
+                          :pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :ObjSuffwVerb}
                  :terms [[:genObj :numObj :persObj :number :person :gender :token],
                          [:O_Common :O_Plural :O_Person1 :Plural :Person1 :Common "baróok nihíhóok"],
@@ -2701,7 +2703,7 @@
                  }
                 {:label "beja_W-PObjSuff"
                  :note "Wedekind-etal2007 Table #31"
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :ObjSuff}
                  :terms [[:number :person :token],
                          [:Singular :Person1 "-heeb"],
@@ -2711,7 +2713,7 @@
                  }
                 {:label "beja_W-PPersInd"
                  :note "Wedekind-etal2007 Table #14"
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :IndependentPersonal}
                  :terms [[:case :number :person :gender :token],
                          [:Object :Singular :Person1 :Common "anéeb"],
@@ -2737,7 +2739,7 @@
                  }
                 {:label "beja_W-PPersSuff"
                  :note "Wedekind-etal2007 Table #13"
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :PersSuff}
                  :terms [[:number :person :gender :token],
                          [:Singular :Person1 :Masc "-bu / -yu"],
@@ -2755,7 +2757,7 @@
                  }
                 {:label "beja_W-PPoss"
                  :note "Wedekind-etal2007 Table #22"
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :IndependentPossessive}
                  :terms [[:genHead :numHead :number :person :gender :token],
                          [:H_Fem :H_Plural :Singular :Person1 :Common "ániita"],
@@ -2801,7 +2803,7 @@
                  }
                 {:label "beja_W-PPossSuff"
                  :note "Wedekind-etal2007 Table #21"
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :PossSuff}
                  :terms [[:numHead :number :person :token],
                          [:H_Plural :Singular :Person1 "-yii -yee"],
